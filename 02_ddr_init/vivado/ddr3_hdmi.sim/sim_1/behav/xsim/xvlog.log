@@ -1,0 +1,54 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_arb_row_col
+WARNING: [VRFC 10-2654] begin/end is required for generate-for in this mode of verilog [E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_memc_ui_top_std
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_1_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Exercise/Software/FPGA/V3-High/02_ddr_init/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v" into library xil_defaultlib

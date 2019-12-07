@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 30 22:44:54 2019
+# Process ID: 12416
+# Current directory: E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2948 E:\Exercise\Software\FPGA\V3-High\test02_ddr_wr_ctrl\design\ddr3_hdmi.xpr
+# Log file: E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/vivado.log
+# Journal file: E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.xpr
+update_compile_order -fileset sources_1
+launch_simulation -install_path E:/Material/FPGA/Modeltech64_10.7/win64
+launch_simulation -install_path E:/Material/FPGA/Modeltech64_10.7/win64
+launch_simulation -install_path E:/Material/FPGA/Modeltech64_10.7/win64
+launch_simulation -install_path E:/Material/FPGA/Modeltech64_10.7/win64
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips ddr3_ctrl]
+generate_target {instantiation_template} [get_files e:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+generate_target all [get_files  E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+export_ip_user_files -of_objects [get_files E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -directory E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Material/FPGA/Xilinx/Xlib10.7} {questa=E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/Software/FPGA/V3-High/test02_ddr_wr_ctrl/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path E:/Material/FPGA/Modeltech64_10.7/win64
