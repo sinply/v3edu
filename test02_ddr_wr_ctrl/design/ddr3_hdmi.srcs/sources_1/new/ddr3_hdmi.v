@@ -45,6 +45,7 @@ wire    [27:0]      wr_cmd_addr;
 wire    [2:0]       wr_cmd_instr;
 wire    [15:0]      wr_cmd_mask;
 wire                data_req;
+wire                wr_end;
 //
 wire    [27:0]       app_addr;
 wire    [2:0]       app_cmd;

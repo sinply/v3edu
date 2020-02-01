@@ -12,7 +12,7 @@
 
 module tb_ddr3_hdmi (); /* this is automatically generated */
 
-	reg srst;
+	reg srst_n;
 	reg clk;
 
 	reg 				sclk;
@@ -93,10 +93,10 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 
 	// reset
 	initial begin
-		srst <= 0;
+		srst_n <= 0;
 		#200
 		repeat (5) @(posedge clk);
-		srst <= 1;
+		srst_n <= 1;
 	end
 
 	// (*NOTE*) replace reset, clock, others
@@ -118,7 +118,7 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 	wire  [0:0] ddr3_odt;
 	wire        rst_n;
 
-	assign rst_n = srst;
+	assign rst_n = srst_n;
 
 	ddr3_model inst_ddr3_model (
 		.rst_n   (ddr3_reset_n),
