@@ -2,8 +2,16 @@ vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
 vlib modelsim_lib/msim/xil_defaultlib
+vlib modelsim_lib/msim/xpm
 
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
+vmap xpm modelsim_lib/msim/xpm
+
+vlog -work xil_defaultlib -64 -incr -sv \
+"D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+vcom -work xpm -64 -93 \
+"D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 -incr \
 "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v" \
@@ -73,7 +81,6 @@ vlog -work xil_defaultlib -64 -incr \
 "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v" \
 "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl_mig_sim.v" \
 "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl.v" \
-
 
 vlog -work xil_defaultlib \
 "glbl.v"

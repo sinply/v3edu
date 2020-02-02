@@ -22,8 +22,8 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 	reg    [6:0]   rd_cmd_bl;
 	reg    [2:0]   rd_cmd_instr;
 	reg    [27:0]  rd_cmd_addr;
-	reg 	[127:0]	rd_data_128bit;
-	reg 			rd_data_valid;
+	reg    [127:0] rd_data_128bit;
+	reg 		   rd_data_valid;
 	//
 	reg 		   data_req;
 	// reg            wr_cmd_start;
@@ -31,7 +31,7 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 	reg    [2:0]   wr_cmd_instr;
 	reg    [27:0]  wr_cmd_addr;
 	reg    [15:0]  wr_cmd_mask;
-	reg    [127:0]	data_128bit;
+	reg    [127:0] data_128bit;
 	//arbit 
 	reg 			wr_req;
 	reg 			rd_req;
@@ -64,7 +64,7 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 		force inst_ddr3_hdmi.inst_A7_rd_ctrl.rd_cmd_instr = rd_cmd_instr;
 		//write 
 		force data_req =  inst_ddr3_hdmi.inst_A7_wr_ctrl.data_req; 
-		// force inst_ddr3_hdmi.inst_A7_rd_ctrl.rd_cmd_start = rd_cmd_start;
+		// force inst_ddr3_hdmi.inst_A7_wr_ctrl.wr_cmd_start = wr_cmd_start;
 		force inst_ddr3_hdmi.inst_A7_wr_ctrl.wr_cmd_bl = wr_cmd_bl;
 		force inst_ddr3_hdmi.inst_A7_wr_ctrl.wr_cmd_addr = wr_cmd_addr;
 		force inst_ddr3_hdmi.inst_A7_wr_ctrl.wr_cmd_instr = wr_cmd_instr;

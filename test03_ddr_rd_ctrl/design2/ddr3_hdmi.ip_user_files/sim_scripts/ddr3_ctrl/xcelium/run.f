@@ -1,8 +1,8 @@
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "E:/Material/FPGA/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 -endlib
 -makelib xcelium_lib/xpm \
-  "E:/Material/FPGA/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
+  "D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v" \

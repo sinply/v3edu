@@ -29,6 +29,7 @@ module tb_ddr3_hdmi (); /* this is automatically generated */
 		rd_cmd_bl = 64;
 		rd_cmd_instr = 1;
 		rd_cmd_addr = 0;
+		rd_cmd_start = 0;
 		//output  
 		force sclk = inst_ddr3_hdmi.inst_A7_rd_ctrl.clk;
 		force rst =  inst_ddr3_hdmi.inst_A7_rd_ctrl.rst;

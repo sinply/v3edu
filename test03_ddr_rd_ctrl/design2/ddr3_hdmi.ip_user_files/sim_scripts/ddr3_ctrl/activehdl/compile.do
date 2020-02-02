@@ -8,10 +8,10 @@ vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xpm activehdl/xpm
 
 vlog -work xil_defaultlib  -sv2k12 \
-"E:/Material/FPGA/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -93 \
-"E:/Material/FPGA/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
+"D:/ProgramData/Xilinx/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v" \

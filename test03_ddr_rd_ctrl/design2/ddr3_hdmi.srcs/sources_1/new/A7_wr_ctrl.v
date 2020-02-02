@@ -59,7 +59,7 @@ begin
 	begin
 		cmd_mask <= 'd0;
 		cmd_instr <= 'd0;
-		cmd_instr <= 'd0;
+		cmd_bl <= 'd0;
 	end
 	else if (wr_cmd_start == 1'b1)
 	begin
