@@ -27,3 +27,6 @@ launch_simulation -install_path D:/ProgramData/modeltech64_10.7/win64
 close_project
 open_project E:/Exercise/FPGA/v3edu/test04_ddr_wr_rd_fifo/design/ddr3_hdmi.xpr
 update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test04_ddr_wr_rd_fifo/design/ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v w ]
+add_files E:/Exercise/FPGA/v3edu/test04_ddr_wr_rd_fifo/design/ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v
+update_compile_order -fileset sources_1
