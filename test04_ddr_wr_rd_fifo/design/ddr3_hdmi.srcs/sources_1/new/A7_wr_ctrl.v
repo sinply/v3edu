@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------------
-// Copyright (c) 2014-2019 All rights reserved
+// Copyright (c) 2014-2020 All rights reserved
 // -----------------------------------------------------------------------------
 // Author : sinply
 // File   : A7_wr_ctrl.v
 // Create : 2019-10-30 15:35:39
-// Revise : 2019-11-01 17:04:37
+// Revise : 2020-02-03 13:34:33
 // Editor : sublime text3, tab size (4)
 // -----------------------------------------------------------------------------
 `timescale 1ns / 1ps
@@ -59,7 +59,7 @@ begin
 	begin
 		cmd_mask <= 'd0;
 		cmd_instr <= 'd0;
-		cmd_instr <= 'd0;
+		cmd_bl <= 'd0;
 	end
 	else if (wr_cmd_start == 1'b1)
 	begin
