@@ -27,3 +27,5 @@ add_files E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.srcs/sources_
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  4 17:12:56 2020...
