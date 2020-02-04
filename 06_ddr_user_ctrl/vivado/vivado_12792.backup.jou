@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 31 13:43:20 2019
+# Process ID: 12792
+# Current directory: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5220 E:\Exercise\Software\FPGA\V3-High\04_ddr_rd_ctrl\vivado1\ddr3_hdmi.xpr
+# Log file: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1/vivado.log
+# Journal file: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1/ddr3_hdmi.xpr
+update_compile_order -fileset sources_1
