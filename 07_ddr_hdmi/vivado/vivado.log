@@ -1,0 +1,638 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb  5 15:21:24 2020
+# Process ID: 2728
+# Current directory: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4524 E:\Exercise\FPGA\v3edu\07_ddr_hdmi\vivado\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 861.070 ; gain = 159.223
+update_compile_order -fileset sources_1
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name asfifo_wr128x512_rd16x4096 -dir e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip
+WARNING: [IP_Flow 19-4832] The IP name 'asfifo_wr128x512_rd16x4096' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+set_property -dict [list CONFIG.Component_Name {asfifo_wr128x512_rd16x4096} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {128} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {16} CONFIG.Output_Depth {4096} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count {true} CONFIG.Write_Data_Count_Width {10} CONFIG.Read_Data_Count {true} CONFIG.Read_Data_Count_Width {13} CONFIG.Full_Threshold_Assert_Value {509} CONFIG.Full_Threshold_Negate_Value {508} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.Enable_Safety_Circuit {false}] [get_ips asfifo_wr128x512_rd16x4096]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'asfifo_wr128x512_rd16x4096' to 'asfifo_wr128x512_rd16x4096' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'asfifo_wr128x512_rd16x4096'...
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'asfifo_wr128x512_rd16x4096'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'asfifo_wr128x512_rd16x4096'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'asfifo_wr128x512_rd16x4096'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'asfifo_wr128x512_rd16x4096'...
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci] -directory E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT2_JITTER {162.035} CONFIG.CLKOUT2_PHASE_ERROR {164.985} CONFIG.CLKOUT3_JITTER {162.035} CONFIG.CLKOUT3_PHASE_ERROR {164.985}] [get_ips ddr3_clk_gen]
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr3_clk_gen'...
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -directory E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name hdmi_clk_gen -dir e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {hdmi_clk_gen} CONFIG.PRIM_SOURCE {Global_buffer} CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLK_OUT1_PORT {p1_clk} CONFIG.CLK_OUT2_PORT {clk1x} CONFIG.CLK_OUT3_PORT {clk5x} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {65} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {325} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {9.750} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9.750} CONFIG.MMCM_CLKOUT1_DIVIDE {15} CONFIG.MMCM_CLKOUT2_DIVIDE {3} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {130.067} CONFIG.CLKOUT1_PHASE_ERROR {99.281} CONFIG.CLKOUT2_JITTER {142.278} CONFIG.CLKOUT2_PHASE_ERROR {99.281} CONFIG.CLKOUT3_JITTER {104.357} CONFIG.CLKOUT3_PHASE_ERROR {99.281}] [get_ips hdmi_clk_gen]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'hdmi_clk_gen' to 'hdmi_clk_gen' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_clk_gen'...
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'hdmi_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_clk_gen'...
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci] -directory E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/encode.v E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/top_hdmi.v E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/hdmi_trans.v E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/Serializer10_1.v E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/VGA_TIMING.v}
+update_compile_order -fileset sources_1
+file mkdir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/constrs_1
+file mkdir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/constrs_1/new
+close [ open E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/constrs_1/new/toppin.xdc w ]
+add_files -fileset constrs_1 E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/constrs_1/new/toppin.xdc
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips ddr3_ctrl]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr3_ctrl'...
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr3_ctrl'...
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -directory E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 17:16:09 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 17:16:09 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 17:24:30 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 17:24:30 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203368853A
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {32}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ila_0/ila_0.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ila_0/ila_0.xci] -directory E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 17:56:01 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 17:56:01 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 18:31:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 18:31:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 18:44:00 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 18:44:00 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 18:48:22 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 18:48:22 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/rd_fifo_en was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/rd_data_valid was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/rd_start was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/wr_data_count was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/hdmi_rst_n was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/rst was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/state was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_1 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_2 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_3 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_4 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_5 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_6 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_7 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_8 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_9 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_10 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_11 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_12 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0>_13 was not found in the design.
+WARNING: Simulation object inst_top_hdmi/inst_hdmi_buffer/<const0> was not found in the design.
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 19:21:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 19:21:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 19:21:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 19:21:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:21:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:21:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {app_rd_data_valid} {p1_cmd_en} {p1_rd_data_count} {p1_rd_data_empty} {rd_cmd_start} {rd_req} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:22:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:22:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes p1_cmd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:22:38
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:22:38
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:22:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:22:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:23:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:23:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 19:27:45 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 19:27:45 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:40:39
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 19:40:53
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 19:40:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 19:40:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 19:41:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 19:41:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:41:47
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes p1_cmd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes rd_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:42:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:42:46
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 19:42:47
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:42:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:42:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:42:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:42:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:45:49
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rd_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 19:45:56
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:45:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:45:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:46:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:46:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes rd_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:46:51
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 19:47:56
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:47:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:47:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:48:13
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rd_req -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes p1_cmd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 19:48:55
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:49:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:49:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:49:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:49:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:49:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:49:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:56:33
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:56:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:59:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:59:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 19:59:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 19:59:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb  5 20:06:42 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log
+[Wed Feb  5 20:06:42 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 20:18:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 20:18:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 20:18:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 20:18:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 20:19:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 20:19:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_top_hdmi/inst_hdmi_buffer/rd_start -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-05 20:19:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_top_hdmi/inst_hdmi_buffer/inst_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-05 20:19:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:21:06
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 20:21:07
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:21:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 20:21:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:21:10
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 20:22:32
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:22:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 20:22:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:22:34
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-05 20:22:49
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:22:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 20:22:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:23:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-05 20:23:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-05 20:23:12
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
