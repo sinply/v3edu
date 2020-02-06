@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb  5 09:05:41 2020
+# Process ID: 13512
+# Current directory: E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2676 E:\Exercise\FPGA\v3edu\test06_ddr_hdmi\design\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Exercise/FPGA/v3edu/test05_ddr_user_ctrl/design' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 872.777 ; gain = 180.004
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_a.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips ddr3_ctrl]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr3_ctrl'...
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr3_ctrl'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr3_ctrl'...
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci] -directory E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/encode.v E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/VGA_TIMING.v E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/Serializer10_1.v E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/hdmi_trans.v}
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v w ]
+add_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v
+update_compile_order -fileset sources_1
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name hdmi_buffer_fifo -dir e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {hdmi_buffer_fifo} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {128} CONFIG.Input_Depth {512} CONFIG.Output_Data_Width {16} CONFIG.Output_Depth {4096} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {9} CONFIG.Write_Data_Count_Width {10} CONFIG.Read_Data_Count {true} CONFIG.Read_Data_Count_Width {13} CONFIG.Full_Threshold_Assert_Value {509} CONFIG.Full_Threshold_Negate_Value {508} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.Enable_Safety_Circuit {false}] [get_ips hdmi_buffer_fifo]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'hdmi_buffer_fifo' to 'hdmi_buffer_fifo' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/hdmi_buffer_fifo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_buffer_fifo'...
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/hdmi_buffer_fifo.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/hdmi_buffer_fifo.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_buffer_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_buffer_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_buffer_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'hdmi_buffer_fifo'...
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/hdmi_buffer_fifo.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/hdmi_buffer_fifo.xci] -directory E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v w ]
+add_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLK_OUT2_PORT {clk1x} CONFIG.CLK_OUT3_PORT {clk5x} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {65} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {325} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {19.500} CONFIG.MMCM_CLKOUT0_DIVIDE_F {4.875} CONFIG.MMCM_CLKOUT1_DIVIDE {15} CONFIG.MMCM_CLKOUT2_DIVIDE {3} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {142.482} CONFIG.CLKOUT1_PHASE_ERROR {160.484} CONFIG.CLKOUT2_JITTER {181.851} CONFIG.CLKOUT2_PHASE_ERROR {160.484} CONFIG.CLKOUT3_JITTER {131.539} CONFIG.CLKOUT3_PHASE_ERROR {160.484}] [get_ips ddr3_clk_gen]
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr3_clk_gen'...
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -directory E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.USE_LOCKED {true}] [get_ips ddr3_clk_gen]
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr3_clk_gen'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr3_clk_gen'...
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -directory E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 15:15:59 2020...

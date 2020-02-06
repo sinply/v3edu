@@ -1,0 +1,2344 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 9944
+License: Customer
+
+Current time: 	Thu Feb 06 16:42:47 GMT+08:00 2020
+Time zone: 	GMT+08:00 (GMT+08:00)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 60 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/ProgramData/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/ProgramData/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	sinply
+User home directory: C:/Users/sinply
+User working directory: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/ProgramData/Xilinx/Vivado
+HDI_APPROOT: D:/ProgramData/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/ProgramData/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/ProgramData/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/sinply/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/sinply/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/sinply/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/ProgramData/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/vivado.log
+Vivado journal file location: 	E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/vivado.jou
+Engine tmp dir: 	E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/.Xil/Vivado-9944-LAPTOP-7SLKK6BV
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/ProgramData/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/ProgramData/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/ProgramData/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/ProgramData/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/ProgramData/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/ProgramData/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	212 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 597 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 59 MB (+59443kb) [00:00:05]
+// [Engine Memory]: 501 MB (+373840kb) [00:00:05]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: E:\Exercise\FPGA\v3edu\08_uart_ddr_hdmi\vivado\ddr3_hdmi.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 71 MB (+9777kb) [00:00:08]
+// [Engine Memory]: 586 MB (+62591kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 34 MB. Current time: 2/6/20 4:42:49 PM GMT+08:00
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 647 MB (+32989kb) [00:00:13]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 697 MB (+19436kb) [00:00:16]
+// [GUI Memory]: 76 MB (+915kb) [00:00:17]
+// Tcl Message: open_project E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/Exercise/FPGA/v3edu/07_ddr_hdmi/vivado' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'. 
+// [Engine Memory]: 743 MB (+11492kb) [00:00:18]
+// Project name: ddr3_hdmi; location: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado; part: xc7a75tfgg484-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 971.504 ; gain = 209.492 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// [GUI Memory]: 87 MB (+7717kb) [00:00:42]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI-Stream FIFO ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:axi_fifo_mm_s:4.1", 11, "AXI-Stream FIFO", 0, false); // O (O, ck)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "FIFO"); // OverlayTextField (P, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Data FIFO ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_data_fifo:2.1", 12, "AXI Data FIFO", 0, false); // O (O, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Embedded Processing ;  ;  ;  ; ", 9, "Embedded Processing", 0, false); // O (O, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 15, "FIFO Generator", 0, false); // O (O, ck)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 15); // O (O, ck)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "FIFO Generator ; AXI4, AXI4-Stream ; Production ; Included ; xilinx.com:ip:fifo_generator:13.2", 15, "FIFO Generator", 0, false, false, false, false, false, true); // O (O, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (ck): Customize IP: addNotify
+// [Engine Memory]: 811 MB (+31735kb) [00:00:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 62 MB. Current time: 2/6/20 4:43:35 PM GMT+08:00
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+selectRadioButton((HResource) null, "First Word Fall Through"); // aK
+setText("Input Data Width", "8"); // z (aZ, r)
+// Elapsed time: 23 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+// Elapsed time: 20 seconds
+selectComboBox("Write Depth (Input_Depth)", "1024", 6); // z (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectComboBox("Fifo Implementation (Fifo_Implementation)", "Independent Clocks Block RAM", 4); // z (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+// [GUI Memory]: 94 MB (+3270kb) [00:02:19]
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+// Elapsed time: 20 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+setText("Input Data Width", "16"); // z (aZ, r)
+selectComboBox("Read Width (Output_Data_Width)", "128", 7); // z (C, r)
+selectCheckBox((HResource) null, "Reset Pin", false); // g (m, r): FALSE
+// [GUI Memory]: 101 MB (+1988kb) [00:03:04]
+// Elapsed time: 26 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+// Elapsed time: 48 seconds
+setText("Component Name", "asfifo_wr16x1024_rd128x128"); // z (P, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // aY (C, r)
+selectCheckBox((HResource) null, "Read Data Count (Synchronized with Read Clk)", true); // g (m, r): TRUE
+// HMemoryUtils.trashcanNow. Engine heap size: 841 MB. GUI used memory: 70 MB. Current time: 2/6/20 4:46:59 PM GMT+08:00
+// Elapsed time: 10 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectComboBox("Fifo Implementation (Fifo_Implementation)", "Common Clock Block RAM", 0); // z (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // aY (C, r)
+// Elapsed time: 18 seconds
+setText("Component Name", "afifo_wr16x1024_rd128x128"); // z (P, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // aY (C, r)
+// [GUI Memory]: 107 MB (+1174kb) [00:05:29]
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (ck)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name afifo_wr16x1024_rd128x128 -dir e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// bx (ck):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'afifo_wr16x1024_rd128x128'... 
+// [Engine Memory]: 851 MB (+18kb) [00:05:32]
+// aI (ck): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectRadioButton(PAResourceQtoS.SimpleOutputProductDialog_SYNTHESIZE_DESIGN_GLOBALLY, "Global"); // a (Q, aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.xci] 
+// HMemoryUtils.trashcanNow. Engine heap size: 868 MB. GUI used memory: 77 MB. Current time: 2/6/20 4:48:14 PM GMT+08:00
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'afifo_wr16x1024_rd128x128'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'afifo_wr16x1024_rd128x128'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'afifo_wr16x1024_rd128x128'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'afifo_wr16x1024_rd128x128'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// [Engine Memory]: 902 MB (+8306kb) [00:05:41]
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128]", 1, true); // B (D, ck) - Node
+// Elapsed time: 70 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128, Instantiation Template]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128, Instantiation Template, afifo_wr16x1024_rd128x128.vho]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128, Instantiation Template, afifo_wr16x1024_rd128x128.veo]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, afifo_wr16x1024_rd128x128, Instantiation Template, afifo_wr16x1024_rd128x128.veo]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Launch External Editor: 'D:/Program Files/Sublime Text 3/sublime_text.exe "e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.veo":0'
+// [GUI Memory]: 113 MB (+501kb) [00:12:39]
+// Elapsed time: 757 seconds
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_ddr3_clk_gen : ddr3_clk_gen (ddr3_clk_gen.xci)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Launch External Editor: 'D:/Program Files/Sublime Text 3/sublime_text.exe "E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/top_ddr3_hdmi.v":12'
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, c)
+// [GUI Memory]: 120 MB (+723kb) [00:20:00]
+// Elapsed time: 21 seconds
+String[] filenames31467 = {"E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/bit8to128.v", "E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/uart_rx.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 29 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/uart_rx.v E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/bit8to128.v} 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v)]", 1); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 923 MB. GUI used memory: 78 MB. Current time: 2/6/20 5:08:44 PM GMT+08:00
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 447 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_user_wr_ctrl : user_wr_ctrl (user_wr_ctrl.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_top_hdmi : top_hdmi (top_hdmi.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_top_hdmi : top_hdmi (top_hdmi.v), inst_hdmi_buffer : hdmi_buffer (hdmi_buffer.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Launch External Editor: 'D:/Program Files/Sublime Text 3/sublime_text.exe "E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/top_hdmi.v":11'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_top_hdmi : top_hdmi (top_hdmi.v), inst_hdmi_buffer : hdmi_buffer (hdmi_buffer.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_ddr3_hdmi (top_ddr3_hdmi.v), inst_top_hdmi : top_hdmi (top_hdmi.v), inst_hdmi_buffer : hdmi_buffer (hdmi_buffer.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Launch External Editor: 'D:/Program Files/Sublime Text 3/sublime_text.exe "E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v":11'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, toppin.xdc]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, toppin.xdc]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Launch External Editor: 'D:/Program Files/Sublime Text 3/sublime_text.exe "E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/constrs_1/new/toppin.xdc":0'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 185 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb  6 17:14:23 2020] Launched synth_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log [Thu Feb  6 17:14:23 2020] Launched impl_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// [GUI Memory]: 127 MB (+1077kb) [00:31:46]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 412 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aw
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1412ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 134 MB (+819kb) [00:44:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 927 MB. GUI used memory: 81 MB. Current time: 2/6/20 5:38:45 PM GMT+08:00
+// Elapsed time: 2094 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,275 MB. GUI used memory: 81 MB. Current time: 2/6/20 5:56:31 PM GMT+08:00
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 1,277 MB (+345634kb) [01:13:53]
+dismissDialog("Auto Connect"); // bx (ck)
+// Elapsed time: 39 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 1,303 MB. GUI used memory: 90 MB. Current time: 2/6/20 5:57:20 PM GMT+08:00
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+unMaximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,303 MB. GUI used memory: 119 MB. Current time: 2/6/20 5:57:27 PM GMT+08:00
+// [GUI Memory]: 145 MB (+4813kb) [01:14:51]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,335 MB. GUI used memory: 93 MB. Current time: 2/6/20 5:57:48 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 22 seconds
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // B (f, aG)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, rx_data[7:0]]", 21, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, wr_en]", 24, false, true, false, false, false, false); // N (O, ResizableWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Add Probes: hide
+// Tcl Message: add_wave -into {hw_ila_data_1.wcfg} -radix hex { {rx_data} {rx_flag} {rx_IBUF} {wr_en} } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 1,341 MB (+540kb) [01:15:37]
+// Elapsed time: 20 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_flag]", 1, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // B (f, aG)
+// Add Probes: show
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// Add Probes: hide
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rx_flag ; ==   ; [B]   ; X ; probe0[10] ; ", 0, "X", 3); // A (O, aG)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // A (O, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes rx_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 17:58:25 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 17:58:27 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 17:58:27 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 17:58:27 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 96 MB. Current time: 2/6/20 5:58:28 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 17:58:30 
+// Elapsed time: 62 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_IBUF]", 2, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_flag]", 1, false); // a (s, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 107 MB. Current time: 2/6/20 5:59:32 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+// Elapsed time: 28 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 59 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu Feb  6 18:01:24 2020] Launched synth_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log [Thu Feb  6 18:01:24 2020] Launched impl_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1358ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 714 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 154 MB (+1868kb) [01:31:00]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 97 MB. Current time: 2/6/20 6:13:40 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+dismissDialog("Auto Connect"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 101 MB. Current time: 2/6/20 6:13:43 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 50 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 18:14:33 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:14:33 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:14:33 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 94 MB. Current time: 2/6/20 6:14:34 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:14:36 
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 741, 329); // n (o, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 17 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_STOP_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_stop_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 18:15:01 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rx_flag ; ==   ; [B]   ; R ; probe0[10] ; 1 of 1", 0, "rx_flag", 0); // A (O, aG)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 111 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 741, 329); // n (o, ck)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 741, 329); // n (o, ck)Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 95 MB. Current time: 2/6/20 6:16:57 PM GMT+08:00
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 13 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu Feb  6 18:17:22 2020] Launched synth_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log [Thu Feb  6 18:17:22 2020] Launched impl_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1407ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 1261 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 97 MB. Current time: 2/6/20 6:38:35 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+dismissDialog("Auto Connect"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 120 MB. Current time: 2/6/20 6:38:37 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:38:42 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 94 MB. Current time: 2/6/20 6:38:43 PM GMT+08:00
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:38:42 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:38:44 
+// Elapsed time: 18 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 18:39:02 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:39:02 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 95 MB. Current time: 2/6/20 6:39:03 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:39:02 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:39:05 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+// Elapsed time: 43 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 96 MB. Current time: 2/6/20 6:40:12 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 124 MB. Current time: 2/6/20 6:40:16 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 17 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:40:33 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 99 MB. Current time: 2/6/20 6:40:34 PM GMT+08:00
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:40:33 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:40:36 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 18:40:41 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:40:41 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:40:41 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 97 MB. Current time: 2/6/20 6:40:42 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:40:44 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:40:44 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:40:46 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,348 MB. GUI used memory: 97 MB. Current time: 2/6/20 6:40:51 PM GMT+08:00
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:40:51 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+// Elapsed time: 11 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,349 MB. GUI used memory: 106 MB. Current time: 2/6/20 6:40:57 PM GMT+08:00
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 78 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,351 MB. GUI used memory: 98 MB. Current time: 2/6/20 6:42:30 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,351 MB. GUI used memory: 118 MB. Current time: 2/6/20 6:42:33 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:42:34 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:42:34 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:42:35 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_flag]", 1, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_data[7:0]]", 0, true); // a (s, aG) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,352 MB. GUI used memory: 102 MB. Current time: 2/6/20 6:42:38 PM GMT+08:00
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_flag]", 1, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, wr_en]", 3, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rx_flag ; ==   ; [B]   ; R ; probe0[10] ; 1 of 1", 0, "==  ", 1); // A (O, aG)
+selectButton(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBE, "IlaProbeTablePanel_remove"); // B (f, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rx_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // B (f, aG)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, wr_en]", 24, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// Add Probes: hide
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "==  ", 0, "Operator", 1); // A (O, aG)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "wr_en ; ==   ; [B]   ; X ; probe0[0] ; ", 0, "X", 3); // A (O, aG)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // A (O, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:42:53 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,354 MB. GUI used memory: 101 MB. Current time: 2/6/20 6:43:04 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:43:04 
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 17 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aG)
+// Elapsed time: 20 seconds
+setText("[0 - 1023]", "100"); // v (c, aG)
+// TclEventType: HW_ILA_CHANGE
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// Tcl Message: set_property CONTROL.TRIGGER_POSITION 100 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:43:32 
+// Elapsed time: 19 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 18:44:01 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:44:01 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 18:44:01 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 101 MB. Current time: 2/6/20 6:44:02 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 18:44:05 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 104 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 109 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 108 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 109 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 109 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 103 MB. Current time: 2/6/20 6:44:22 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:44:23 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:44:23 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 19 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 100 MB. Current time: 2/6/20 6:44:25 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+// Elapsed time: 44 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 1396 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,359 MB. GUI used memory: 99 MB. Current time: 2/6/20 7:08:44 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// Elapsed time: 123 seconds
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,359 MB. GUI used memory: 99 MB. Current time: 2/6/20 7:10:52 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_IBUF]", 2, false); // a (s, aG)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, wr_en]", 3, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:10:59 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 19:11:00 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:11:00 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:11:00 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,360 MB. GUI used memory: 101 MB. Current time: 2/6/20 7:11:01 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Elapsed time: 12 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:11:13 
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: close view
+// Elapsed time: 14 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,362 MB. GUI used memory: 101 MB. Current time: 2/6/20 7:11:28 PM GMT+08:00
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// bx (ck):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,362 MB. GUI used memory: 101 MB. Current time: 2/6/20 7:11:58 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,363 MB. GUI used memory: 103 MB. Current time: 2/6/20 7:12:02 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, wr_en]", 3, false); // a (s, aG)
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:12:05 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 55 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_flag]", 1, false); // a (s, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "wr_en ; ==   ; [B]   ; R ; probe0[0] ; 1 of 1", 0, "==  ", 1); // A (O, aG)
+selectButton(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBE, "IlaProbeTablePanel_remove"); // B (f, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // B (f, aG)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, rx_flag]", 22, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// Add Probes: hide
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "==  ", 0, "Operator", 1); // A (O, aG)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rx_flag ; ==   ; [B]   ; X ; probe0[10] ; ", 0, "X", 3); // A (O, aG)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // A (O, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes rx_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// Elapsed time: 10 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 19:13:23 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:13:23 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:13:23 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 104 MB. Current time: 2/6/20 7:13:24 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:13:33 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,364 MB. GUI used memory: 104 MB. Current time: 2/6/20 7:13:34 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:13:33 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 24 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "rx_flag ; ==   ; [B]   ; R ; probe0[10] ; 1 of 1", 0, "==  ", 1); // A (O, aG)
+selectButton(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBE, "IlaProbeTablePanel_remove"); // B (f, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rx_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // B (f, aG)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, wr_en]", 24, false); // N (O, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// Add Probes: hide
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "==  ", 0, "Operator", 1); // A (O, aG)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "wr_en ; ==   ; [B]   ; X ; probe0[0] ; ", 0, "X", 3); // A (O, aG)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 0, "Value", 3); // A (O, aG)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:14:07 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 26 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_IBUF]", 2, false); // a (s, aG)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, wr_en]", 3, false); // a (s, aG)
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 19:14:36 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:14:36 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,366 MB. GUI used memory: 105 MB. Current time: 2/6/20 7:14:36 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:14:36 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:14:40 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 23 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, rx_IBUF]", 2, false); // a (s, aG)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, wr_en]", 3, false); // a (s, aG)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,366 MB. GUI used memory: 104 MB. Current time: 2/6/20 7:15:04 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 50 seconds
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, aG)
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// Tcl Message: wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2020-Feb-06 19:15:57 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:15:57 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:15:57 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:00 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 103 MB. Current time: 2/6/20 7:16:01 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:00 
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:03 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:03 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 103 MB. Current time: 2/6/20 7:16:04 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:05 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:05 
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:07 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,367 MB. GUI used memory: 103 MB. Current time: 2/6/20 7:16:08 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:07 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:09 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,368 MB. GUI used memory: 104 MB. Current time: 2/6/20 7:16:10 PM GMT+08:00
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:09 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:11 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:11 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_IMMEDIATE_FOR_THIS_ILA_CORE, "Waveform Viewer_trigger_immediate"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_TRIGGER_IMMEDIATE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-06 19:16:12 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 103 MB. Current time: 2/6/20 7:16:13 PM GMT+08:00
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-06 19:16:12 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Waveform: addNotify
+// Waveform: addNotify
+// Elapsed time: 400 seconds
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: dock view
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 102 MB. Current time: 2/6/20 7:22:53 PM GMT+08:00
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: close_hw 
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu Feb  6 19:23:02 2020] Launched synth_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/synth_1/runme.log [Thu Feb  6 19:23:02 2020] Launched impl_1... Run output will be captured here: E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1476ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 736 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a75t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7a75t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// [GUI Memory]: 165 MB (+3027kb) [02:52:59]
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_bit8to128"}]] 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 115 MB. Current time: 2/6/20 7:35:41 PM GMT+08:00
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 296 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 0); // k (j, ck)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_1: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 110 MB. Current time: 2/6/20 7:40:40 PM GMT+08:00
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // B (f, aG)
+// Add Probes: show
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a (C, ResizableWindow)
+// Add Probes: hide
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+floatView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // aw (aE, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_2: float view
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 114 MB. Current time: 2/6/20 7:40:54 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.WaveformView_ADD, "Waveform Viewer_new"); // B (f, aG)
+// Add Probes: show
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, rx_data[7:0]]", 21, false); // N (O, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, wr_en]", 24, false, true, false, false, false, false); // N (O, ResizableWindow) - Shift Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (C, ResizableWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Add Probes: hide
+// Tcl Message: add_wave -into {hw_ila_data_2.wcfg} -radix hex { {rx_data} {rx_flag} {rx_IBUF} {wr_en} } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2020-Feb-06 19:41:03 
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2020-Feb-06 19:41:20 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 115 MB. Current time: 2/6/20 7:41:21 PM GMT+08:00
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// Waveform: addNotify
+// Waveform: addNotify
+// A (ck): Delete Dashboard: addNotify
+// PAResourceOtoP.PAViews_DASHBOARD: hw_ila_2: close view
+// Elapsed time: 164 seconds
+closeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // aw (aE, aG)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,369 MB. GUI used memory: 113 MB. Current time: 2/6/20 7:43:48 PM GMT+08:00
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+dismissDialog("Delete Dashboard"); // A (ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: save_wave_config {E:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE

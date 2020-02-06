@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a75tfgg484-2" LaunchTime="1580988182">
+  <File Type="BITSTR-BMM" Name="top_ddr3_hdmi_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_ddr3_hdmi_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_ddr3_hdmi_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="top_ddr3_hdmi_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_ddr3_hdmi.tcl"/>
+  <File Type="OPT-TIMING" Name="top_ddr3_hdmi_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="top_ddr3_hdmi_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_ddr3_hdmi_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_ddr3_hdmi_reports.tcl"/>
+  <File Type="OPT-DRC" Name="top_ddr3_hdmi_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_ddr3_hdmi.hwdef"/>
+  <File Type="PWROPT-DCP" Name="top_ddr3_hdmi_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="top_ddr3_hdmi_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_ddr3_hdmi_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_ddr3_hdmi_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_ddr3_hdmi_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_ddr3_hdmi_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_ddr3_hdmi_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_ddr3_hdmi_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_ddr3_hdmi_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_ddr3_hdmi_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_ddr3_hdmi_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="top_ddr3_hdmi.bgn"/>
+  <File Type="PLACE-TIMING" Name="top_ddr3_hdmi_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_ddr3_hdmi_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="top_ddr3_hdmi.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_ddr3_hdmi_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_ddr3_hdmi_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_ddr3_hdmi_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="top_ddr3_hdmi.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="top_ddr3_hdmi_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_ddr3_hdmi_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_ddr3_hdmi_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_ddr3_hdmi_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_ddr3_hdmi_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_ddr3_hdmi_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_ddr3_hdmi.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_ddr3_hdmi_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="top_ddr3_hdmi.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_ddr3_hdmi_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_ddr3_hdmi_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_ddr3_hdmi.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_ddr3_hdmi_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_ddr3_hdmi_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_ddr3_hdmi_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_ddr3_hdmi_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_ddr3_hdmi_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_ddr3_hdmi_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_ddr3_hdmi_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_ddr3_hdmi_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="top_ddr3_hdmi_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_ddr3_hdmi_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_ddr3_hdmi_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_ddr3_hdmi_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_ddr3_hdmi_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_ddr3_hdmi_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_ddr3_hdmi_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_ddr3_hdmi_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_ddr3_hdmi_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_ddr3_hdmi_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_ddr3_hdmi_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="top_ddr3_hdmi.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_ddr3_hdmi_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="top_ddr3_hdmi.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_ddr3_hdmi.nky"/>
+  <File Type="BG-DRC" Name="top_ddr3_hdmi.drc"/>
+  <File Type="RDI-RDI" Name="top_ddr3_hdmi.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/ila_0/ila_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_ctrl/ddr3_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/wr_data_fifo_ctrl/wr_data_fifo_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/cmd_fifo_ctrl/cmd_fifo_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/rd_data_fifo_ctrl/rd_data_fifo_ctrl.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/asfifo_wr128x512_rd16x4096/asfifo_wr128x512_rd16x4096.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_wr16x1024_rd128x128/afifo_wr16x1024_rd128x128.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Serializer10_1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGA_TIMING.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/a7_ddr3_rd_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/a7_ddr3_wr_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arbit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bit8to128.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/encode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi_buffer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi_trans.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_hdmi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/user_rd_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/user_wr_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_ddr3_hdmi.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_ctrl/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3_ctrl"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3_ctrl/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3_ctrl"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_ddr3_hdmi"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/toppin.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

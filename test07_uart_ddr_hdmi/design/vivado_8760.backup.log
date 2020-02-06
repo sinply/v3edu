@@ -1,0 +1,632 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb  6 13:05:58 2020
+# Process ID: 8760
+# Current directory: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16780 E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\design\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/design' since last save.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/Serializer10_1.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/Serializer10_1.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/VGA_TIMING.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/VGA_TIMING.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/encode.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/encode.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/hdmi_trans.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/hdmi_trans.v' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/Serializer10_1.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/Serializer10_1.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/VGA_TIMING.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/VGA_TIMING.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/encode.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/encode.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/hdmi_trans.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/hdmi_trans.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/Serializer10_1.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/Serializer10_1.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/VGA_TIMING.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/VGA_TIMING.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/encode.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/encode.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/ipdef/hdmi_trans.v'; using path 'E:/Exercise/FPGA/v3edu/test06_ddr_hdmi/ipdef/hdmi_trans.v' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 927.598 ; gain = 246.984
+update_compile_order -fileset sources_1
+add_files -norecurse E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/uart_rx.v
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/bit8to128.v w ]
+add_files E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/new/bit8to128.v
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name asfifo_wr16x1024_rd128x128 -dir e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip
+WARNING: [IP_Flow 19-4832] The IP name 'asfifo_wr16x1024_rd128x128' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+set_property -dict [list CONFIG.Component_Name {asfifo_wr16x1024_rd128x128} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {16} CONFIG.Output_Data_Width {128} CONFIG.Output_Depth {128} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Use_Extra_Logic {false} CONFIG.Write_Data_Count {false} CONFIG.Write_Data_Count_Width {10} CONFIG.Read_Data_Count {false} CONFIG.Read_Data_Count_Width {7} CONFIG.Full_Threshold_Assert_Value {1023} CONFIG.Full_Threshold_Negate_Value {1022} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.Enable_Safety_Circuit {false}] [get_ips asfifo_wr16x1024_rd128x128]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'asfifo_wr16x1024_rd128x128' to 'asfifo_wr16x1024_rd128x128' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'asfifo_wr16x1024_rd128x128'...
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'asfifo_wr16x1024_rd128x128'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'asfifo_wr16x1024_rd128x128'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'asfifo_wr16x1024_rd128x128'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'asfifo_wr16x1024_rd128x128'...
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci] -directory E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/ProgramData/modeltech64_10.7/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/ProgramData/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/ProgramData/Xilinx/XLib10.7/modelsim.ini' copied to run dir:'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ddr3_hdmi' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+Reading D:/ProgramData/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {tb_ddr3_hdmi_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:44:14 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/sim/asfifo_wr16x1024_rd128x128.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ila_hdmi_buffer/sim/ila_hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/sim/hdmi_buffer_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/rd_data_fifo/sim/rd_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/cmd_fifo/sim/cmd_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/wr_data_fifo/sim/wr_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_select.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_state.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_col_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_mc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_lane.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_calib_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_if_post_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy_wrapper.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_of_pre_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_4lanes.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal_hr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_init.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_edge.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_lim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_po_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_samp.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_oclkdelay_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_prbs_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrcal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl_off_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_prbs_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_skip_calib_tap.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_cc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_edge_store.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_meta.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_pd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_tap_base.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_cmd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_rd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl_mig_sim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_arbit.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_wr_ctrl.v ../../../../../../test06_ddr_hdmi/ipdef/Serializer10_1.v ../../../../../../test06_ddr_hdmi/ipdef/VGA_TIMING.v ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v ../../../../ddr3_hdmi.srcs/sources_1/new/ddr3_hdmi.v ../../../../../../test06_ddr_hdmi/ipdef/encode.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v ../../../../../../test06_ddr_hdmi/ipdef/hdmi_trans.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_data_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/uart_rx.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v 
+# -- Compiling module asfifo_wr16x1024_rd128x128
+# -- Compiling module ila_hdmi_buffer
+# -- Compiling module hdmi_buffer_fifo
+# -- Compiling module rd_data_fifo
+# -- Compiling module cmd_fifo
+# -- Compiling module wr_data_fifo
+# -- Compiling module mig_7series_v4_1_clk_ibuf
+# -- Compiling module mig_7series_v4_1_infrastructure
+# -- Compiling module mig_7series_v4_1_iodelay_ctrl
+# -- Compiling module mig_7series_v4_1_tempmon
+# -- Compiling module mig_7series_v4_1_arb_mux
+# -- Compiling module mig_7series_v4_1_arb_row_col
+# -- Compiling module mig_7series_v4_1_arb_select
+# -- Compiling module mig_7series_v4_1_bank_cntrl
+# -- Compiling module mig_7series_v4_1_bank_common
+# -- Compiling module mig_7series_v4_1_bank_compare
+# -- Compiling module mig_7series_v4_1_bank_mach
+# -- Compiling module mig_7series_v4_1_bank_queue
+# -- Compiling module mig_7series_v4_1_bank_state
+# -- Compiling module mig_7series_v4_1_col_mach
+# -- Compiling module mig_7series_v4_1_mc
+# -- Compiling module mig_7series_v4_1_rank_cntrl
+# -- Compiling module mig_7series_v4_1_rank_common
+# -- Compiling module mig_7series_v4_1_rank_mach
+# -- Compiling module mig_7series_v4_1_round_robin_arb
+# -- Compiling module mig_7series_v4_1_ecc_buf
+# -- Compiling module mig_7series_v4_1_ecc_dec_fix
+# -- Compiling module mig_7series_v4_1_ecc_gen
+# -- Compiling module mig_7series_v4_1_ecc_merge_enc
+# -- Compiling module mig_7series_v4_1_fi_xor
+# -- Compiling module mig_7series_v4_1_memc_ui_top_std
+# -- Compiling module mig_7series_v4_1_mem_intfc
+# -- Compiling module mig_7series_v4_1_ddr_byte_group_io
+# -- Compiling module mig_7series_v4_1_ddr_byte_lane
+# -- Compiling module mig_7series_v4_1_ddr_calib_top
+# -- Compiling module mig_7series_v4_1_ddr_if_post_fifo
+# -- Compiling module mig_7series_v4_1_ddr_mc_phy
+# -- Compiling module mig_7series_v4_1_ddr_mc_phy_wrapper
+# -- Compiling module mig_7series_v4_1_ddr_of_pre_fifo
+# -- Compiling module mig_7series_v4_1_ddr_phy_4lanes
+# -- Compiling module mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay
+# -- Compiling module mig_7series_v4_1_ddr_phy_dqs_found_cal
+# -- Compiling module mig_7series_v4_1_ddr_phy_dqs_found_cal_hr
+# -- Compiling module mig_7series_v4_1_ddr_phy_init
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_cntlr
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_data
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_edge
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_lim
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_mux
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_po_cntlr
+# -- Compiling module mig_7series_v4_1_ddr_phy_ocd_samp
+# -- Compiling module mig_7series_v4_1_ddr_phy_oclkdelay_cal
+# -- Compiling module mig_7series_v4_1_ddr_phy_prbs_rdlvl
+# -- Compiling module mig_7series_v4_1_ddr_phy_rdlvl
+# -- Compiling module mig_7series_v4_1_ddr_phy_tempmon
+# -- Compiling module mig_7series_v4_1_ddr_phy_top
+# -- Compiling module mig_7series_v4_1_ddr_phy_wrcal
+# -- Compiling module mig_7series_v4_1_ddr_phy_wrlvl
+# -- Compiling module mig_7series_v4_1_ddr_phy_wrlvl_off_delay
+# -- Compiling module mig_7series_v4_1_ddr_prbs_gen
+# -- Compiling module mig_7series_v4_1_ddr_skip_calib_tap
+# -- Compiling module mig_7series_v4_1_poc_cc
+# -- Compiling module mig_7series_v4_1_poc_edge_store
+# -- Compiling module mig_7series_v4_1_poc_meta
+# -- Compiling module mig_7series_v4_1_poc_pd
+# -- Compiling module mig_7series_v4_1_poc_tap_base
+# -- Compiling module mig_7series_v4_1_poc_top
+# -- Compiling module mig_7series_v4_1_ui_cmd
+# -- Compiling module mig_7series_v4_1_ui_rd_data
+# -- Compiling module mig_7series_v4_1_ui_top
+# -- Compiling module mig_7series_v4_1_ui_wr_data
+# -- Compiling module ddr3_ctrl_mig
+# -- Compiling module ddr3_ctrl
+# -- Compiling module hdmi_clk_gen_clk_wiz
+# -- Compiling module hdmi_clk_gen
+# -- Compiling module ddr3_clk_gen_clk_wiz
+# -- Compiling module ddr3_clk_gen
+# -- Compiling module A7_arbit
+# -- Compiling module A7_rd_ctrl
+# -- Compiling module A7_wr_ctrl
+# -- Compiling module Serializer10_1
+# -- Compiling module VGA_TIMING
+# -- Compiling module bit8to128
+# -- Compiling module ddr3_hdmi
+# -- Compiling module encode
+# -- Compiling module hdmi_buffer
+# -- Compiling module hdmi_dis
+# -- Compiling module hdmi_trans
+# -- Compiling module rd_cmd_fifo_ctrl
+# -- Compiling module rd_data_fifo_ctrl
+# -- Compiling module uart_rx
+# -- Compiling module user_rd_ctrl
+# -- Compiling module user_wr_ctrl
+# -- Compiling module wr_cmd_fifo_ctrl
+# -- Compiling module wr_data_fifo_ctrl
+# 
+# Top level modules:
+# 	ddr3_hdmi
+# End time: 15:44:15 on Feb 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:44:17 on Feb 06,2020
+# vlog -64 -incr -sv -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sim_1/new/ddr3_model.sv 
+# -- Compiling module ddr3_model
+# 
+# Top level modules:
+# 	ddr3_model
+# End time: 15:44:17 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:44:17 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sim_1/new/tb_ddr3_hdmi.v 
+# -- Compiling module tb_ddr3_hdmi
+# 
+# Top level modules:
+# 	tb_ddr3_hdmi
+# End time: 15:44:17 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 15:44:17 on Feb 06,2020
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:44:18 on Feb 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1150.156 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+Program launched (PID=13776)
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1150.156 ; gain = 0.000
+launch_simulation -install_path D:/ProgramData/modeltech64_10.7/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/ProgramData/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/ProgramData/Xilinx/XLib10.7/modelsim.ini' copied to run dir:'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ddr3_hdmi' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+Reading D:/ProgramData/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {tb_ddr3_hdmi_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:10:55 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/sim/asfifo_wr16x1024_rd128x128.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ila_hdmi_buffer/sim/ila_hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/sim/hdmi_buffer_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/rd_data_fifo/sim/rd_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/cmd_fifo/sim/cmd_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/wr_data_fifo/sim/wr_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_select.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_state.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_col_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_mc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_lane.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_calib_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_if_post_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy_wrapper.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_of_pre_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_4lanes.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal_hr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_init.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_edge.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_lim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_po_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_samp.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_oclkdelay_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_prbs_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrcal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl_off_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_prbs_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_skip_calib_tap.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_cc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_edge_store.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_meta.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_pd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_tap_base.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_cmd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_rd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl_mig_sim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_arbit.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_wr_ctrl.v ../../../../../../test06_ddr_hdmi/ipdef/Serializer10_1.v ../../../../../../test06_ddr_hdmi/ipdef/VGA_TIMING.v ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v ../../../../ddr3_hdmi.srcs/sources_1/new/ddr3_hdmi.v ../../../../../../test06_ddr_hdmi/ipdef/encode.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v ../../../../../../test06_ddr_hdmi/ipdef/hdmi_trans.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_data_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/uart_rx.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v 
+# -- Skipping module asfifo_wr16x1024_rd128x128
+# -- Skipping module ila_hdmi_buffer
+# -- Skipping module hdmi_buffer_fifo
+# -- Skipping module rd_data_fifo
+# -- Skipping module cmd_fifo
+# -- Skipping module wr_data_fifo
+# -- Skipping module mig_7series_v4_1_clk_ibuf
+# -- Skipping module mig_7series_v4_1_infrastructure
+# -- Skipping module mig_7series_v4_1_iodelay_ctrl
+# -- Skipping module mig_7series_v4_1_tempmon
+# -- Skipping module mig_7series_v4_1_arb_mux
+# -- Skipping module mig_7series_v4_1_arb_row_col
+# -- Skipping module mig_7series_v4_1_arb_select
+# -- Skipping module mig_7series_v4_1_bank_cntrl
+# -- Skipping module mig_7series_v4_1_bank_common
+# -- Skipping module mig_7series_v4_1_bank_compare
+# -- Skipping module mig_7series_v4_1_bank_mach
+# -- Skipping module mig_7series_v4_1_bank_queue
+# -- Skipping module mig_7series_v4_1_bank_state
+# -- Skipping module mig_7series_v4_1_col_mach
+# -- Skipping module mig_7series_v4_1_mc
+# -- Skipping module mig_7series_v4_1_rank_cntrl
+# -- Skipping module mig_7series_v4_1_rank_common
+# -- Skipping module mig_7series_v4_1_rank_mach
+# -- Skipping module mig_7series_v4_1_round_robin_arb
+# -- Skipping module mig_7series_v4_1_ecc_buf
+# -- Skipping module mig_7series_v4_1_ecc_dec_fix
+# -- Skipping module mig_7series_v4_1_ecc_gen
+# -- Skipping module mig_7series_v4_1_ecc_merge_enc
+# -- Skipping module mig_7series_v4_1_fi_xor
+# -- Skipping module mig_7series_v4_1_memc_ui_top_std
+# -- Skipping module mig_7series_v4_1_mem_intfc
+# -- Skipping module mig_7series_v4_1_ddr_byte_group_io
+# -- Skipping module mig_7series_v4_1_ddr_byte_lane
+# -- Skipping module mig_7series_v4_1_ddr_calib_top
+# -- Skipping module mig_7series_v4_1_ddr_if_post_fifo
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy_wrapper
+# -- Skipping module mig_7series_v4_1_ddr_of_pre_fifo
+# -- Skipping module mig_7series_v4_1_ddr_phy_4lanes
+# -- Skipping module mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal_hr
+# -- Skipping module mig_7series_v4_1_ddr_phy_init
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_data
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_edge
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_lim
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_mux
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_po_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_samp
+# -- Skipping module mig_7series_v4_1_ddr_phy_oclkdelay_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_prbs_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_tempmon
+# -- Skipping module mig_7series_v4_1_ddr_phy_top
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrcal
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl_off_delay
+# -- Skipping module mig_7series_v4_1_ddr_prbs_gen
+# -- Skipping module mig_7series_v4_1_ddr_skip_calib_tap
+# -- Skipping module mig_7series_v4_1_poc_cc
+# -- Skipping module mig_7series_v4_1_poc_edge_store
+# -- Skipping module mig_7series_v4_1_poc_meta
+# -- Skipping module mig_7series_v4_1_poc_pd
+# -- Skipping module mig_7series_v4_1_poc_tap_base
+# -- Skipping module mig_7series_v4_1_poc_top
+# -- Skipping module mig_7series_v4_1_ui_cmd
+# -- Skipping module mig_7series_v4_1_ui_rd_data
+# -- Skipping module mig_7series_v4_1_ui_top
+# -- Skipping module mig_7series_v4_1_ui_wr_data
+# -- Skipping module ddr3_ctrl_mig
+# -- Skipping module ddr3_ctrl
+# -- Skipping module hdmi_clk_gen_clk_wiz
+# -- Skipping module hdmi_clk_gen
+# -- Skipping module ddr3_clk_gen_clk_wiz
+# -- Skipping module ddr3_clk_gen
+# -- Skipping module A7_arbit
+# -- Skipping module A7_rd_ctrl
+# -- Skipping module A7_wr_ctrl
+# -- Skipping module Serializer10_1
+# -- Skipping module VGA_TIMING
+# ** Error: ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v(76): (vlog-2730) Undefined variable: 'p1_clk'.
+# -- Skipping module ddr3_hdmi
+# -- Skipping module encode
+# -- Skipping module hdmi_buffer
+# -- Skipping module hdmi_dis
+# -- Skipping module hdmi_trans
+# -- Skipping module rd_cmd_fifo_ctrl
+# -- Skipping module rd_data_fifo_ctrl
+# -- Skipping module uart_rx
+# -- Skipping module user_rd_ctrl
+# -- Skipping module user_wr_ctrl
+# -- Skipping module wr_cmd_fifo_ctrl
+# -- Skipping module wr_data_fifo_ctrl
+# End time: 16:10:55 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+# Error in macro ./tb_ddr3_hdmi_compile.do line 112
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:10:55 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/sim/asfifo_wr16x1024_rd128x128.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ila_hdmi_buffer/sim/ila_hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/sim/hdmi_buffer_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/rd_data_fifo/sim/rd_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/cmd_fifo/sim/cmd_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/wr_data_fifo/sim/wr_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_select.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_state.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_col_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_mc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_lane.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_calib_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_if_post_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy_wrapper.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_of_pre_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_4lanes.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal_hr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_init.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_edge.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_lim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_po_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_samp.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_oclkdelay_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_prbs_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrcal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl_off_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_prbs_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_skip_calib_tap.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_cc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_edge_store.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_meta.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_pd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_tap_base.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_cmd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_rd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl_mig_sim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_arbit.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_wr_ctrl.v ../../../../../../test06_ddr_hdmi/ipdef/Serializer10_1.v ../../../../../../test06_ddr_hdmi/ipdef/VGA_TIMING.v ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v ../../../../ddr3_hdmi.srcs/sources_1/new/ddr3_hdmi.v ../../../../../../test06_ddr_hdmi/ipdef/encode.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v ../../../../../../test06_ddr_hdmi/ipdef/hdmi_trans.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_data_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/uart_rx.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v 
+# -- Skipping module asfifo_wr16x1024_rd128x128
+# -- Skipping module ila_hdmi_buffer
+# -- Skipping module hdmi_buffer_fifo
+# -- Skipping module rd_data_fifo
+# -- Skipping module cmd_fifo
+# -- Skipping module wr_data_fifo
+# -- Skipping module mig_7series_v4_1_clk_ibuf
+# -- Skipping module mig_7series_v4_1_infrastructure
+# -- Skipping module mig_7series_v4_1_iodelay_ctrl
+# -- Skipping module mig_7series_v4_1_tempmon
+# -- Skipping module mig_7series_v4_1_arb_mux
+# -- Skipping module mig_7series_v4_1_arb_row_col
+# -- Skipping module mig_7series_v4_1_arb_select
+# -- Skipping module mig_7series_v4_1_bank_cntrl
+# -- Skipping module mig_7series_v4_1_bank_common
+# -- Skipping module mig_7series_v4_1_bank_compare
+# -- Skipping module mig_7series_v4_1_bank_mach
+# -- Skipping module mig_7series_v4_1_bank_queue
+# -- Skipping module mig_7series_v4_1_bank_state
+# -- Skipping module mig_7series_v4_1_col_mach
+# -- Skipping module mig_7series_v4_1_mc
+# -- Skipping module mig_7series_v4_1_rank_cntrl
+# -- Skipping module mig_7series_v4_1_rank_common
+# -- Skipping module mig_7series_v4_1_rank_mach
+# -- Skipping module mig_7series_v4_1_round_robin_arb
+# -- Skipping module mig_7series_v4_1_ecc_buf
+# -- Skipping module mig_7series_v4_1_ecc_dec_fix
+# -- Skipping module mig_7series_v4_1_ecc_gen
+# -- Skipping module mig_7series_v4_1_ecc_merge_enc
+# -- Skipping module mig_7series_v4_1_fi_xor
+# -- Skipping module mig_7series_v4_1_memc_ui_top_std
+# -- Skipping module mig_7series_v4_1_mem_intfc
+# -- Skipping module mig_7series_v4_1_ddr_byte_group_io
+# -- Skipping module mig_7series_v4_1_ddr_byte_lane
+# -- Skipping module mig_7series_v4_1_ddr_calib_top
+# -- Skipping module mig_7series_v4_1_ddr_if_post_fifo
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy_wrapper
+# -- Skipping module mig_7series_v4_1_ddr_of_pre_fifo
+# -- Skipping module mig_7series_v4_1_ddr_phy_4lanes
+# -- Skipping module mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal_hr
+# -- Skipping module mig_7series_v4_1_ddr_phy_init
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_data
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_edge
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_lim
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_mux
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_po_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_samp
+# -- Skipping module mig_7series_v4_1_ddr_phy_oclkdelay_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_prbs_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_tempmon
+# -- Skipping module mig_7series_v4_1_ddr_phy_top
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrcal
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl_off_delay
+# -- Skipping module mig_7series_v4_1_ddr_prbs_gen
+# -- Skipping module mig_7series_v4_1_ddr_skip_calib_tap
+# -- Skipping module mig_7series_v4_1_poc_cc
+# -- Skipping module mig_7series_v4_1_poc_edge_store
+# -- Skipping module mig_7series_v4_1_poc_meta
+# -- Skipping module mig_7series_v4_1_poc_pd
+# -- Skipping module mig_7series_v4_1_poc_tap_base
+# -- Skipping module mig_7series_v4_1_poc_top
+# -- Skipping module mig_7series_v4_1_ui_cmd
+# -- Skipping module mig_7series_v4_1_ui_rd_data
+# -- Skipping module mig_7series_v4_1_ui_top
+# -- Skipping module mig_7series_v4_1_ui_wr_data
+# -- Skipping module ddr3_ctrl_mig
+# -- Skipping module ddr3_ctrl
+# -- Skipping module hdmi_clk_gen_clk_wiz
+# -- Skipping module hdmi_clk_gen
+# -- Skipping module ddr3_clk_gen_clk_wiz
+# -- Skipping module ddr3_clk_gen
+# -- Skipping module A7_arbit
+# -- Skipping module A7_rd_ctrl
+# -- Skipping module A7_wr_ctrl
+# -- Skipping module Serializer10_1
+# -- Skipping module VGA_TIMING
+# ** Error: ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v(76): (vlog-2730) Undefined variable: 'p1_clk'.
+# -- Skipping module ddr3_hdmi
+# -- Skipping module encode
+# -- Skipping module hdmi_buffer
+# -- Skipping module hdmi_dis
+# -- Skipping module hdmi_trans
+# -- Skipping module rd_cmd_fifo_ctrl
+# -- Skipping module rd_data_fifo_ctrl
+# -- Skipping module uart_rx
+# -- Skipping module user_rd_ctrl
+# -- Skipping module user_wr_ctrl
+# -- Skipping module wr_cmd_fifo_ctrl
+# -- Skipping module wr_data_fifo_ctrl
+# End time: 16:10:55 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# child process exited abnormally
+#     while executing
+# "exec <nul: {D:\ProgramData\modeltech64_10.7\win64\vlog.EXE} -64 -incr -work xil_defaultlib +incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_ge..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "D:\\ProgramData\\modeltech64_10.7\\win64\\vlog -64 -incr -work xil_defaultlib  "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir..."
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:03:24 . Memory (MB): peak = 1160.137 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:03:27 . Memory (MB): peak = 1160.137 ; gain = 9.980
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path D:/ProgramData/modeltech64_10.7/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/ProgramData/modeltech64_10.7/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/ProgramData/Xilinx/XLib10.7/modelsim.ini' copied to run dir:'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ddr3_hdmi' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+Reading D:/ProgramData/modeltech64_10.7/tcl/vsim/pref.tcl
+
+# 10.7
+
+# do {tb_ddr3_hdmi_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:16:36 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/sim/asfifo_wr16x1024_rd128x128.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ila_hdmi_buffer/sim/ila_hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_buffer_fifo/sim/hdmi_buffer_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/rd_data_fifo/sim/rd_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/cmd_fifo/sim/cmd_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/wr_data_fifo/sim/wr_data_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_clk_ibuf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_infrastructure.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_iodelay_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/clocking/mig_7series_v4_1_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_row_col.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_arb_select.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_compare.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_queue.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_bank_state.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_col_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_mc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_cntrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_common.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_rank_mach.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/controller/mig_7series_v4_1_round_robin_arb.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_buf.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_dec_fix.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_ecc_merge_enc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ecc/mig_7series_v4_1_fi_xor.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_memc_ui_top_std.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ip_top/mig_7series_v4_1_mem_intfc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_group_io.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_byte_lane.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_calib_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_if_post_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_mc_phy_wrapper.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_of_pre_fifo.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_4lanes.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_dqs_found_cal_hr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_init.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_edge.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_lim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_mux.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_po_cntlr.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_ocd_samp.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_oclkdelay_cal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_prbs_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_rdlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_tempmon.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrcal.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_phy_wrlvl_off_delay.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_prbs_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_ddr_skip_calib_tap.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_cc.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_edge_store.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_meta.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_pd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_tap_base.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/phy/mig_7series_v4_1_poc_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_cmd.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_rd_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_top.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ui/mig_7series_v4_1_ui_wr_data.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl_mig_sim.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/rtl/ddr3_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen/hdmi_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen_clk_wiz.v ../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_arbit.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/A7_wr_ctrl.v ../../../../../../test06_ddr_hdmi/ipdef/Serializer10_1.v ../../../../../../test06_ddr_hdmi/ipdef/VGA_TIMING.v ../../../../ddr3_hdmi.srcs/sources_1/new/bit8to128.v ../../../../ddr3_hdmi.srcs/sources_1/new/ddr3_hdmi.v ../../../../../../test06_ddr_hdmi/ipdef/encode.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_buffer.v ../../../../ddr3_hdmi.srcs/sources_1/new/hdmi_dis.v ../../../../../../test06_ddr_hdmi/ipdef/hdmi_trans.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/rd_data_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/uart_rx.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_cmd_fifo_ctrl.v ../../../../ddr3_hdmi.srcs/sources_1/new/wr_data_fifo_ctrl.v 
+# -- Skipping module asfifo_wr16x1024_rd128x128
+# -- Skipping module ila_hdmi_buffer
+# -- Skipping module hdmi_buffer_fifo
+# -- Skipping module rd_data_fifo
+# -- Skipping module cmd_fifo
+# -- Skipping module wr_data_fifo
+# -- Skipping module mig_7series_v4_1_clk_ibuf
+# -- Skipping module mig_7series_v4_1_infrastructure
+# -- Skipping module mig_7series_v4_1_iodelay_ctrl
+# -- Skipping module mig_7series_v4_1_tempmon
+# -- Skipping module mig_7series_v4_1_arb_mux
+# -- Skipping module mig_7series_v4_1_arb_row_col
+# -- Skipping module mig_7series_v4_1_arb_select
+# -- Skipping module mig_7series_v4_1_bank_cntrl
+# -- Skipping module mig_7series_v4_1_bank_common
+# -- Skipping module mig_7series_v4_1_bank_compare
+# -- Skipping module mig_7series_v4_1_bank_mach
+# -- Skipping module mig_7series_v4_1_bank_queue
+# -- Skipping module mig_7series_v4_1_bank_state
+# -- Skipping module mig_7series_v4_1_col_mach
+# -- Skipping module mig_7series_v4_1_mc
+# -- Skipping module mig_7series_v4_1_rank_cntrl
+# -- Skipping module mig_7series_v4_1_rank_common
+# -- Skipping module mig_7series_v4_1_rank_mach
+# -- Skipping module mig_7series_v4_1_round_robin_arb
+# -- Skipping module mig_7series_v4_1_ecc_buf
+# -- Skipping module mig_7series_v4_1_ecc_dec_fix
+# -- Skipping module mig_7series_v4_1_ecc_gen
+# -- Skipping module mig_7series_v4_1_ecc_merge_enc
+# -- Skipping module mig_7series_v4_1_fi_xor
+# -- Skipping module mig_7series_v4_1_memc_ui_top_std
+# -- Skipping module mig_7series_v4_1_mem_intfc
+# -- Skipping module mig_7series_v4_1_ddr_byte_group_io
+# -- Skipping module mig_7series_v4_1_ddr_byte_lane
+# -- Skipping module mig_7series_v4_1_ddr_calib_top
+# -- Skipping module mig_7series_v4_1_ddr_if_post_fifo
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy
+# -- Skipping module mig_7series_v4_1_ddr_mc_phy_wrapper
+# -- Skipping module mig_7series_v4_1_ddr_of_pre_fifo
+# -- Skipping module mig_7series_v4_1_ddr_phy_4lanes
+# -- Skipping module mig_7series_v4_1_ddr_phy_ck_addr_cmd_delay
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_dqs_found_cal_hr
+# -- Skipping module mig_7series_v4_1_ddr_phy_init
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_data
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_edge
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_lim
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_mux
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_po_cntlr
+# -- Skipping module mig_7series_v4_1_ddr_phy_ocd_samp
+# -- Skipping module mig_7series_v4_1_ddr_phy_oclkdelay_cal
+# -- Skipping module mig_7series_v4_1_ddr_phy_prbs_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_rdlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_tempmon
+# -- Skipping module mig_7series_v4_1_ddr_phy_top
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrcal
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl
+# -- Skipping module mig_7series_v4_1_ddr_phy_wrlvl_off_delay
+# -- Skipping module mig_7series_v4_1_ddr_prbs_gen
+# -- Skipping module mig_7series_v4_1_ddr_skip_calib_tap
+# -- Skipping module mig_7series_v4_1_poc_cc
+# -- Skipping module mig_7series_v4_1_poc_edge_store
+# -- Skipping module mig_7series_v4_1_poc_meta
+# -- Skipping module mig_7series_v4_1_poc_pd
+# -- Skipping module mig_7series_v4_1_poc_tap_base
+# -- Skipping module mig_7series_v4_1_poc_top
+# -- Skipping module mig_7series_v4_1_ui_cmd
+# -- Skipping module mig_7series_v4_1_ui_rd_data
+# -- Skipping module mig_7series_v4_1_ui_top
+# -- Skipping module mig_7series_v4_1_ui_wr_data
+# -- Skipping module ddr3_ctrl_mig
+# -- Skipping module ddr3_ctrl
+# -- Skipping module hdmi_clk_gen_clk_wiz
+# -- Skipping module hdmi_clk_gen
+# -- Skipping module ddr3_clk_gen_clk_wiz
+# -- Skipping module ddr3_clk_gen
+# -- Skipping module A7_arbit
+# -- Skipping module A7_rd_ctrl
+# -- Skipping module A7_wr_ctrl
+# -- Skipping module Serializer10_1
+# -- Skipping module VGA_TIMING
+# -- Compiling module bit8to128
+# -- Skipping module ddr3_hdmi
+# -- Skipping module encode
+# -- Skipping module hdmi_buffer
+# -- Skipping module hdmi_dis
+# -- Skipping module hdmi_trans
+# -- Skipping module rd_cmd_fifo_ctrl
+# -- Skipping module rd_data_fifo_ctrl
+# -- Skipping module uart_rx
+# -- Skipping module user_rd_ctrl
+# -- Skipping module user_wr_ctrl
+# -- Skipping module wr_cmd_fifo_ctrl
+# -- Skipping module wr_data_fifo_ctrl
+# 
+# Top level modules:
+# 	ddr3_hdmi
+# End time: 16:16:36 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:16:36 on Feb 06,2020
+# vlog -64 -incr -sv -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sim_1/new/ddr3_model.sv 
+# -- Skipping module ddr3_model
+# 
+# Top level modules:
+# 	ddr3_model
+# End time: 16:16:36 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:16:37 on Feb 06,2020
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/hdmi_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen" "+incdir+../../../../ddr3_hdmi.srcs/sim_1/new" ../../../../ddr3_hdmi.srcs/sim_1/new/tb_ddr3_hdmi.v 
+# -- Skipping module tb_ddr3_hdmi
+# 
+# Top level modules:
+# 	tb_ddr3_hdmi
+# End time: 16:16:37 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 16:16:37 on Feb 06,2020
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:16:37 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.sim/sim_1/behav/modelsim'
+Program launched (PID=896)
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1161.094 ; gain = 0.957
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  6 16:37:55 2020...

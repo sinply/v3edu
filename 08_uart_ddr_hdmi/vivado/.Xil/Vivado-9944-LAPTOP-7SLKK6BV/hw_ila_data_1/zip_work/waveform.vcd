@@ -1,0 +1,33 @@
+$date
+        2020-Feb-06 19:35:38
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " inst_bit8to128/rx_flag $end
+$var reg 1 # inst_bit8to128/wr_fifo_en $end
+$var reg 1 $ inst_bit8to128/rx_cnt $end
+$var reg 8 % inst_bit8to128/rd_data_count [7:0] $end
+$var reg 8 - inst_bit8to128/rd_cnt [7:0] $end
+$var reg 1 5 inst_bit8to128/rd_en $end
+$var reg 1 6 inst_bit8to128/<const0>_1 $end
+$var reg 1 7 inst_bit8to128/<const0>_2 $end
+$var reg 1 8 inst_bit8to128/<const0>_3 $end
+$var reg 1 9 inst_bit8to128/<const0>_4 $end
+$var reg 1 : inst_bit8to128/<const0>_5 $end
+$var reg 1 ; inst_bit8to128/<const0>_6 $end
+$var reg 1 < inst_bit8to128/<const0>_7 $end
+$var reg 1 = inst_bit8to128/<const0>_8 $end
+$var reg 1 > inst_bit8to128/<const0>_9 $end
+$var reg 1 ? inst_bit8to128/<const0>_10 $end
+$var reg 1 @ inst_bit8to128/<const0>_11 $end
+$var reg 1 A inst_bit8to128/<const0> $end
+$var reg 1 B _TRIGGER $end
+$var reg 1 C _WINDOW $end
+$var reg 1 D _GAP $end
+$upscope $end
+$enddefinitions $end

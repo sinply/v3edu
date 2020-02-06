@@ -1,0 +1,330 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Feb  6 19:34:06 2020
+| Host         : LAPTOP-7SLKK6BV running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_ddr3_hdmi_methodology_drc_routed.rpt -pb top_ddr3_hdmi_methodology_drc_routed.pb -rpx top_ddr3_hdmi_methodology_drc_routed.rpx
+| Design       : top_ddr3_hdmi
+| Device       : xc7a75tfgg484-2
+| Speed File   : -2
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 58
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 7          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 33         |
+| TIMING-16 | Warning  | Large setup violation                           | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects     | 1          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF               | 16         |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell inst_top_hdmi/inst_hdmi_buffer/cnt[4]_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_top_hdmi/inst_hdmi_trans/inst_Serializer10_1_clk/ini_rst_reg/PRE, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/cnt_reg[1]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/cnt_reg[2]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/cnt_reg[3]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/cnt_reg[4]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[0]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[1]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[2]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[3]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[4]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[5]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[6]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[7]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[8]/CLR, inst_top_hdmi/inst_hdmi_trans/inst_encode_blue/dout_reg[9]/CLR (the first 15 of 42 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell inst_uart_rx_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_uart_rx/bit_cnt_reg[0]/CLR, inst_uart_rx/bit_cnt_reg[1]/CLR, inst_uart_rx/bit_cnt_reg[2]/CLR, inst_uart_rx/bit_cnt_reg[3]/CLR, inst_uart_rx/bit_flag_reg/CLR, inst_uart_rx/cnt_baud_reg[0]/CLR, inst_uart_rx/cnt_baud_reg[10]/CLR, inst_uart_rx/cnt_baud_reg[11]/CLR, inst_uart_rx/cnt_baud_reg[12]/CLR, inst_uart_rx/cnt_baud_reg[1]/CLR, inst_uart_rx/cnt_baud_reg[2]/CLR, inst_uart_rx/cnt_baud_reg[3]/CLR, inst_uart_rx/cnt_baud_reg[4]/CLR, inst_uart_rx/cnt_baud_reg[5]/CLR, inst_uart_rx/cnt_baud_reg[6]/CLR (the first 15 of 28 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__0/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__1/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__10/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__11/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__12/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__13/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__14/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__15/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__16/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__17/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__18/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__19/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__2/PRE, u_ddr3_ctrl/u_ddr3_ctrl_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__20/PRE (the first 15 of 34 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X28Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X29Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X29Y121 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X28Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X28Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X29Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X31Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X30Y119 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[12] in site SLICE_X12Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[20] in site SLICE_X12Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[19] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[4] in site SLICE_X12Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/shift_reg_in_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[10] in site SLICE_X32Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[2] in site SLICE_X32Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/shift_reg_in_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/shift_reg_in_reg[0] in site SLICE_X14Y121 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X14Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X12Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X15Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell rd_cmd_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X81Y62 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell rd_cmd_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell rd_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X44Y152 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell rd_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X52Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X54Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X53Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X55Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X53Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#25 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X55Y118 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#26 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X57Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#27 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X53Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#28 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X56Y120 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#29 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X54Y121 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#30 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X54Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#31 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X55Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell u_ddr3_ctrl/u_ddr3_ctrl_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#32 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell wr_cmd_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X62Y65 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell wr_cmd_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#33 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell wr_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X55Y142 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell wr_data_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -2.543 ns between u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C (clocked by clk_pll_i) and inst_top_hdmi/inst_hdmi_buffer/hdmi_rst_n_r_reg/D (clocked by clk1x_hdmi_clk_gen). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '114' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/Exercise/FPGA/v3edu/08_uart_ddr_hdmi/vivado/ddr3_hdmi.srcs/sources_1/ip/ddr3_ctrl/ddr3_ctrl/user_design/constraints/ddr3_ctrl.xdc (Line: 346)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+u_ddr3_ctrl/u_ddr3_ctrl_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

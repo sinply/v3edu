@@ -1,0 +1,385 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb  6 19:44:21 2020
+# Process ID: 11564
+# Current directory: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16216 E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\design\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {p2_cmd_empty} {p2_cmd_en} {p2_wr_empty} {p2_wr_en} {po_data} {po_flag} {rx_IBUF} {user_wr_end} {wr_en} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property CONTROL.TRIGGER_POSITION 100 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes user_wr_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes user_wr_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_64bit -dir e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {64} CONFIG.Component_Name {ila_64bit}] [get_ips ila_64bit]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ila_64bit/ila_64bit.xci]
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ila_64bit/ila_64bit.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ila_64bit/ila_64bit.xci]
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ila_64bit/ila_64bit.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/ila_64bit/ila_64bit.xci] -directory E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {inst_bit8to128/bit128_cnt} {inst_bit8to128/bit128_en} {inst_bit8to128/p2_clk} {inst_bit8to128/po_data} {inst_bit8to128/po_flag} {inst_bit8to128/wr_cnt} {inst_bit8to128/wr_data} {inst_bit8to128/wr_en} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {inst_bit8to128/bit128_cnt} {inst_bit8to128/bit128_en} {inst_bit8to128/p2_clk} {inst_bit8to128/po_data} {inst_bit8to128/po_flag} {inst_bit8to128/wr_cnt} {inst_bit8to128/wr_data} {inst_bit8to128/wr_en} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u1023 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property CONTROL.TRIGGER_POSITION 100 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'hXXX [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u1023 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'hXXX [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/wr_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u0 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'u1023 [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/po_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq12'hXXX [get_hw_probes inst_bit8to128/wr_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq7'oXXX [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq7'u0 [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq7'u63 [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq7'hXX [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+set_property -dict [list CONFIG.Use_Extra_Logic {true} CONFIG.Write_Data_Count_Width {11} CONFIG.Read_Data_Count {true} CONFIG.Read_Data_Count_Width {8}] [get_ips asfifo_wr16x1024_rd128x128]
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci]
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.srcs/sources_1/ip/asfifo_wr16x1024_rd128x128/asfifo_wr16x1024_rd128x128.xci] -directory E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.runs/impl_1/ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {p2_cmd_empty} {p2_cmd_en} {p2_wr_empty} {p2_wr_en} {po_data} {po_flag} {rx_IBUF} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+set_property TRIGGER_COMPARE_VALUE eq7'u0 [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+set_property TRIGGER_COMPARE_VALUE eq7'u63 [get_hw_probes inst_bit8to128/bit128_cnt -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes inst_bit8to128/bit128_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]\
+  [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_bit8to128/inst_ila_uart_buffer"}]]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_ddr"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test07_uart_ddr_hdmi/design/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

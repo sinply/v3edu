@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 31 13:43:20 2019
+# Process ID: 12792
+# Current directory: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5220 E:\Exercise\Software\FPGA\V3-High\04_ddr_rd_ctrl\vivado1\ddr3_hdmi.xpr
+# Log file: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1/vivado.log
+# Journal file: E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/Software/FPGA/V3-High/04_ddr_rd_ctrl/vivado1/ddr3_hdmi.xpr
+INFO: [Project 1-313] Project file moved from 'E:/Exercise/Software/FPGA/V3-High/03_ddr_wr_ctrl/vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Material/FPGA/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 832.598 ; gain = 145.863
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 14:10:25 2019...

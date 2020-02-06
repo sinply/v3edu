@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Feb  4 15:15:55 2020
+# Process ID: 9376
+# Current directory: E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2952 E:\Exercise\FPGA\v3edu\06_ddr_user_ctrl\vivado\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.xpr
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v w ]
+add_files E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.srcs/sources_1/new/user_wr_ctrl.v
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v w ]
+add_files E:/Exercise/FPGA/v3edu/06_ddr_user_ctrl/vivado/ddr3_hdmi.srcs/sources_1/new/user_rd_ctrl.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
