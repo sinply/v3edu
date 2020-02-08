@@ -6,7 +6,7 @@
 
 ## 二、系统框图
 
-![1580966630235](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580966630235.png )    
+![1580966630235](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580966630235.png )    
 
 ​	上图的系统框图中，从DDR3读取数据，然后显示在HDMI显示器的这部分已经搞定，这次练习主要从考虑将uart读取的数据写入DDR3的过程，其中主要是实现8bit到128bit模块的实现。
 
@@ -20,7 +20,7 @@
 
  	对于bit8转bit128模块的实现，这里有一点需要注意，就是实际fifo写入的数据为16bit，读取的数据位数则为128bit，这样的话，需要先将数据转换为16bit，再写入fifo中，具体的时序如下图所示。
 
-![1580969141221](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580969141221.png)
+![1580969141221](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580969141221.png)
 
 ### 2.实现分析
 
@@ -106,13 +106,13 @@ fclose(fid);
 
 ​	这个主要查看bit8to128模块的时序，仔细观察波形。
 
-![1580976167726](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580976167726.png)
+![1580976167726](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580976167726.png)
 
 ​	查看波形，发现读数据的时钟出现了错误，导致整个过程出错，计数偏少，而实际上fifo中的数据已全部读出。
 
 ​	需要进行时钟的匹配，修改时钟和相应的标志位。
 
-![1580976512176](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580976512176.png)
+![1580976512176](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580976512176.png)
 
 ​	因为这里只需要个数足够了，不需要说一定要在写状态，保证一定能够读到数据。然后，再次进行仿真。
 
@@ -120,7 +120,7 @@ fclose(fid);
 
 ​	这个则主要观察user_wr_ctrl的时序，主要观察数据。
 
-![1580977517146](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580977517146.png)
+![1580977517146](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580977517146.png)
 
 ​	波形正确，仿真这部分搞定。
 
@@ -130,13 +130,13 @@ fclose(fid);
 
 ​	首先，查看是否uart是否读取的正确的数据。需要抓取的信号为po_flag和po_data，以发送0xAA为例进行查看。
 
-![1580991399984](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580991399984.png)
+![1580991399984](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580991399984.png)
 
 ​	正确检测到po_flag的上升沿，同时检测到相应的数据po_data为0xAA，所以uart读取信号正确。
 
 ​	然后，bit8to128模块的wr_en是否正常输出。需要抓取的信号是wr_en，发送整幅图像转化后的数据。
 
-![1580991911071](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580991911071.png)
+![1580991911071](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580991911071.png)
 
 ​	发现虽然读取了数据，但是读取的数据长度不大正确，代码部分可能还存在问题。
 
@@ -146,17 +146,17 @@ fclose(fid);
 
 ​	既然，暂时没有发现问题，那就从内容查看具体的问题，看是哪方面出现了问题。这里直接抓取bit8to128模块的内部信号。
 
-![1580995299496](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580995299496.png)
+![1580995299496](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580995299496.png)
 
 ​	发现问题，bit128_cnt一直在往上加，然后清零，这样不停的操作。这明显就有问题，使得读取相同的数据过多。再返回来查看代码，发现是bit128拉高的节点不对，这里需要进行修改。然后，重新编译查看结果。
 
-![1580995483883](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580995483883.png)
+![1580995483883](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580995483883.png)
 
 ​	上述方式又引进了新问题，即bit128_en一直没有拉高，这里使用存在一个问题，就是读写时序不一致的问题，导致数据的判定也一定程度上存在问题。
 
 ​	故重新修改为如下的方式实现。
 
-![1580998133329](C:\Users\sinply\AppData\Roaming\Typora\typora-user-images\1580998133329.png)
+![1580998133329](E:\Exercise\FPGA\v3edu\test07_uart_ddr_hdmi\doc\pic\1580998133329.png)
 
 ​	其中rd_data_count是fifo读取的数据，而不是自己累加的数据，会实时更新，这样基本上就搞定了。
 

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb  8 14:58:57 2020
+# Process ID: 12136
+# Current directory: E:/Exercise/FPGA/v3edu/test08_Gige_RGMII/design/Gige_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10868 E:\Exercise\FPGA\v3edu\test08_Gige_RGMII\design\Gige_HDMI\Gige_HDMI.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test08_Gige_RGMII/design/Gige_HDMI/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test08_Gige_RGMII/design/Gige_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test08_Gige_RGMII/design/Gige_HDMI/Gige_HDMI.xpr
+update_compile_order -fileset sources_1
