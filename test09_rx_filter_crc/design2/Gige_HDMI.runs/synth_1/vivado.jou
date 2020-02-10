@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Feb 10 10:48:02 2020
+# Process ID: 7032
+# Current directory: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design2/Gige_HDMI.runs/synth_1
+# Command line: vivado.exe -log top_gige_hdmi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_gige_hdmi.tcl
+# Log file: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design2/Gige_HDMI.runs/synth_1/top_gige_hdmi.vds
+# Journal file: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design2/Gige_HDMI.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_gige_hdmi.tcl -notrace

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb  9 09:13:20 2020
+# Process ID: 9356
+# Current directory: E:/Exercise/FPGA/v3edu/10_rx_filter_crc/vivado/Gige_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent872 E:\Exercise\FPGA\v3edu\10_rx_filter_crc\vivado\Gige_HDMI\Gige_HDMI.xpr
+# Log file: E:/Exercise/FPGA/v3edu/10_rx_filter_crc/vivado/Gige_HDMI/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/10_rx_filter_crc/vivado/Gige_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/10_rx_filter_crc/vivado/Gige_HDMI/Gige_HDMI.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 867.750 ; gain = 174.313
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 09:15:12 2020...

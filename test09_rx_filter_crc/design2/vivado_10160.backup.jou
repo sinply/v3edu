@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Feb  9 10:18:51 2020
+# Process ID: 10160
+# Current directory: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2568 E:\Exercise\FPGA\v3edu\test09_rx_filter_crc\design\Gige_HDMI.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.xpr
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_buffer.v w ]
+add_files E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_buffer.v
+update_compile_order -fileset sources_1
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name asfifo_wr8x8192_rd8x8192 -dir e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {asfifo_wr8x8192_rd8x8192} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {8} CONFIG.Input_Depth {8192} CONFIG.Output_Data_Width {8} CONFIG.Output_Depth {8192} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Data_Count_Width {13} CONFIG.Write_Data_Count_Width {13} CONFIG.Read_Data_Count_Width {13} CONFIG.Full_Threshold_Assert_Value {8191} CONFIG.Full_Threshold_Negate_Value {8190} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.Enable_Safety_Circuit {false}] [get_ips asfifo_wr8x8192_rd8x8192]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/asfifo_wr8x8192_rd8x8192.xci]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/asfifo_wr8x8192_rd8x8192.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/asfifo_wr8x8192_rd8x8192.xci]
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/asfifo_wr8x8192_rd8x8192.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/asfifo_wr8x8192_rd8x8192.xci] -directory E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_sta_buffer.v w ]
+add_files E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_sta_buffer.v
+update_compile_order -fileset sources_1
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name asfifo_wr16x64_rd16x64 -dir e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {asfifo_wr16x64_rd16x64} CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {First_Word_Fall_Through} CONFIG.Input_Data_Width {16} CONFIG.Input_Depth {64} CONFIG.Output_Data_Width {16} CONFIG.Output_Depth {64} CONFIG.Reset_Pin {false} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {0} CONFIG.Use_Dout_Reset {false} CONFIG.Use_Extra_Logic {true} CONFIG.Data_Count_Width {6} CONFIG.Write_Data_Count_Width {7} CONFIG.Read_Data_Count {true} CONFIG.Read_Data_Count_Width {7} CONFIG.Full_Threshold_Assert_Value {63} CONFIG.Full_Threshold_Negate_Value {62} CONFIG.Empty_Threshold_Assert_Value {4} CONFIG.Empty_Threshold_Negate_Value {5} CONFIG.Enable_Safety_Circuit {false}] [get_ips asfifo_wr16x64_rd16x64]
+generate_target {instantiation_template} [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr16x64_rd16x64/asfifo_wr16x64_rd16x64.xci]
+set_property generate_synth_checkpoint false [get_files  e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr16x64_rd16x64/asfifo_wr16x64_rd16x64.xci]
+generate_target all [get_files  e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr16x64_rd16x64/asfifo_wr16x64_rd16x64.xci]
+export_ip_user_files -of_objects [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr16x64_rd16x64/asfifo_wr16x64_rd16x64.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files e:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/ip/asfifo_wr16x64_rd16x64/asfifo_wr16x64_rd16x64.xci] -directory E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/ProgramData/Xilinx/XLib10.7} {questa=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_filter.v w ]
+add_files E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_filter.v
+update_compile_order -fileset sources_1
+add_files -norecurse E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/crc32_d8_rec_02.v
+update_compile_order -fileset sources_1
+close [ open E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_ctrl.v w ]
+add_files E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.srcs/sources_1/new/rx_ctrl.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_valid} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/rx_en_cnt} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_rx_ctrl/inst_rx_filter/rx_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_status} {inst_rx_ctrl/inst_rx_filter/pkg_status_1} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/rx_en_r} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+add_wave -into {hw_ila_data_2.wcfg} -radix unsigned { {inst_rx_ctrl/inst_rx_filter/rx_en_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+set_property CONTROL.TRIGGER_POSITION 128 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_status} {inst_rx_ctrl/inst_rx_filter/pkg_status_1} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/rx_en_r} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+add_wave -into {hw_ila_data_2.wcfg} -radix unsigned { {inst_rx_ctrl/inst_rx_filter/rx_en_cnt} }
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/data_cnt} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_valid} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/data_cnt} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_valid} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {rd_status} {rx_data} {rx_en} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {rd_data} {rd_en} {rd_status} {rx_data} {rx_en} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes rd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {rd_data} {rd_en} {rd_status} {rx_data} {rx_en} }
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rd_en -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/pkg_end} {inst_rx_ctrl/rd_data_count} {inst_rx_ctrl/rd_en} {inst_rx_ctrl/rd_en_r} {inst_rx_ctrl/rd_status} {inst_rx_ctrl/status_rd_en} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes inst_rx_ctrl/pkg_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/crc32_cal_end} {inst_rx_ctrl/inst_rx_filter/crc32_error} {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_valid} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+add_wave -into {hw_ila_data_3.wcfg} -radix unsigned { {inst_rx_ctrl/inst_rx_filter/data_cnt} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {inst_rx_ctrl/inst_rx_filter/dest_ok} {inst_rx_ctrl/inst_rx_filter/origin_ok} {inst_rx_ctrl/inst_rx_filter/pkg_end} {inst_rx_ctrl/inst_rx_filter/pkg_status} {inst_rx_ctrl/inst_rx_filter/rx_data} {inst_rx_ctrl/inst_rx_filter/rx_en} {inst_rx_ctrl/inst_rx_filter/udp_ok} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {inst_rx_ctrl/pkg_end} {inst_rx_ctrl/pkg_status} {inst_rx_ctrl/rd_en} {inst_rx_ctrl/rd_status} {inst_rx_ctrl/status_rd_en} }
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]\
+  [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.runs/impl_1/top_gige_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_ila_rx_ctrl"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_rx_ctrl/inst_rx_filter/inst_ila_rx_filter"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"inst_ila_top"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {E:/Exercise/FPGA/v3edu/test09_rx_filter_crc/design/Gige_HDMI.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw

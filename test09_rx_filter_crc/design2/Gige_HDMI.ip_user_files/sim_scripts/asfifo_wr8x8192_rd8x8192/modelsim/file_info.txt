@@ -1,0 +1,2 @@
+asfifo_wr8x8192_rd8x8192.v,verilog,xil_defaultlib,../../../../Gige_HDMI.srcs/sources_1/ip/asfifo_wr8x8192_rd8x8192/sim/asfifo_wr8x8192_rd8x8192.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
