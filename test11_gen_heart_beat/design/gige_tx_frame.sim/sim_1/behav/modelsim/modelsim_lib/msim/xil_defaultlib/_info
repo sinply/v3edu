@@ -1,0 +1,125 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Exercise/FPGA/v3edu/test11_gen_heart_beat/design/gige_tx_frame.sim/sim_1/behav/modelsim
+T_opt
+!s110 1581403540
+V5d@bU?OcEC7SGjYEaAiSi3
+04 11 4 work tb_top_gige fast 0
+04 4 4 work glbl fast 0
+=1-040e3c5428d4-5e424d93-277-8b0
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7;67
+vgen_frame_ctrl
+Z2 !s110 1581403528
+!i10b 1
+!s100 30MF2O0z`P30QKoZn@@g]3
+I^aYKW1aANO1AWb_S;@CS_0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1581403008
+8../../../../gige_tx_frame.srcs/sources_1/new/gen_frame_ctrl.v
+F../../../../gige_tx_frame.srcs/sources_1/new/gen_frame_ctrl.v
+Z4 L0 12
+Z5 OL;L;10.7;67
+r1
+!s85 0
+31
+Z6 !s108 1581403528.000000
+Z7 !s107 ../../../../gige_tx_frame.srcs/sim_1/new/tb_top_gige.v|../../../../gige_tx_frame.srcs/sources_1/new/top_gige.v|../../../../gige_tx_frame.srcs/sources_1/new/timer.v|../../../../gige_tx_frame.srcs/sources_1/new/gen_frame_ctrl.v|
+Z8 !s90 -64|-incr|-work|xil_defaultlib|../../../../gige_tx_frame.srcs/sources_1/new/gen_frame_ctrl.v|../../../../gige_tx_frame.srcs/sources_1/new/timer.v|../../../../gige_tx_frame.srcs/sources_1/new/top_gige.v|../../../../gige_tx_frame.srcs/sim_1/new/tb_top_gige.v|
+!i113 0
+Z9 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vglbl
+!s110 1581403529
+!i10b 1
+!s100 7cd<?T0KPANS9PBoRj:BY2
+INdU5f[;Bb^Y=SUnL>A9=o3
+R3
+R0
+w1529022455
+8glbl.v
+Fglbl.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R9
+R1
+vtb_top_gige
+R2
+!i10b 1
+!s100 jU_FU2mGZ7Q:]9LKLgN<A3
+Ibfda[nlVF5DZ>T@2dM]QD0
+R3
+R0
+w1581403481
+8../../../../gige_tx_frame.srcs/sim_1/new/tb_top_gige.v
+F../../../../gige_tx_frame.srcs/sim_1/new/tb_top_gige.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtimer
+R2
+!i10b 1
+!s100 ^25_Beg>mI2cPMbG^@NAd2
+Im`dcM;48?EAbV]o09MPnk2
+R3
+R0
+w1581401705
+8../../../../gige_tx_frame.srcs/sources_1/new/timer.v
+F../../../../gige_tx_frame.srcs/sources_1/new/timer.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtop_gige
+R2
+!i10b 1
+!s100 DlIfBBS^[AZzfg6I`8c0]1
+I_c8SUzk=^a=GBjZHWCDlH3
+R3
+R0
+w1581403278
+8../../../../gige_tx_frame.srcs/sources_1/new/top_gige.v
+F../../../../gige_tx_frame.srcs/sources_1/new/top_gige.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
