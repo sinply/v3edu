@@ -1,0 +1,2 @@
+rd_data_fifo_ctrl.v,verilog,xil_defaultlib,../../../../ddr3_hdmi.srcs/sources_1/ip/rd_data_fifo_ctrl/sim/rd_data_fifo_ctrl.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 12 18:41:58 2020
+# Process ID: 13004
+# Current directory: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9700 E:\Exercise\FPGA\v3edu\test13_tx_crc_oddr\design\gige_tx_frame.xpr
+# Log file: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ProgramData/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 899.957 ; gain = 176.598
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/top_gige.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203368853A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/top_gige.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb 12 18:45:09 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/synth_1/runme.log
+[Wed Feb 12 18:45:09 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/top_gige.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Feb 12 19:01:51 2020] Launched synth_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/synth_1/runme.log
+[Wed Feb 12 19:01:51 2020] Launched impl_1...
+Run output will be captured here: E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203368853A
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/top_gige.bit} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a75t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/test13_tx_crc_oddr/design/gige_tx_frame.runs/impl_1/top_gige.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a75t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 12 19:08:37 2020...

@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 12 16:19:50 2020
+# Process ID: 9508
+# Current directory: E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10548 E:\Exercise\FPGA\v3edu\14_tx_crc_oddr\vivado2\ddr3_hdmi.xpr
+# Log file: E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/vivado.log
+# Journal file: E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/new/checksum_ctrl.v E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/new/gen_frame_ctrl.v E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/new/timer.v E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/new/crc32_d8_send_02.v E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/new/oddr_ctrl.v}
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT4_USED {true} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {125} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {125} CONFIG.CLKOUT4_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT2_DIVIDE {8} CONFIG.MMCM_CLKOUT3_DIVIDE {8} CONFIG.MMCM_CLKOUT3_PHASE {0.000} CONFIG.NUM_OUT_CLKS {4} CONFIG.CLKOUT3_JITTER {154.207} CONFIG.CLKOUT3_PHASE_ERROR {164.985} CONFIG.CLKOUT4_JITTER {154.207} CONFIG.CLKOUT4_PHASE_ERROR {164.985}] [get_ips ddr3_clk_gen]
+generate_target all [get_files  E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci]
+export_ip_user_files -of_objects [get_files E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/ip/ddr3_clk_gen/ddr3_clk_gen.xci] -directory E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.ip_user_files/sim_scripts -ip_user_files_dir E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.ip_user_files -ipstatic_source_dir E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/edatools/sim_lab1073} {questa=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+add_files -norecurse E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/ip/blk_wr8x4096/blk_wr8x4096.xci
+export_ip_user_files -of_objects  [get_files  E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.srcs/sources_1/ip/blk_wr8x4096/blk_wr8x4096.xci] -lib_map_path [list {modelsim=C:/edatools/sim_lab1073} {questa=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/questa} {riviera=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/riviera} {activehdl=E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {dout} {timer_pulse} {dsout} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes timer_pulse -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+current_hw_device [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+set_property PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property FULL_PROBES.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.ltx} [get_hw_devices xc7a75t_0]
+set_property PROGRAM.FILE {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.runs/impl_1/top_ddr3_hdmi.bit} [get_hw_devices xc7a75t_0]
+program_hw_devices [get_hw_devices xc7a75t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a75t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a75t_0] -filter {CELL_NAME=~"ila_inst_top"}]]
+save_wave_config {E:/Exercise/FPGA/v3edu/14_tx_crc_oddr/vivado2/ddr3_hdmi.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
