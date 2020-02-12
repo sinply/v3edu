@@ -1,0 +1,63 @@
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_gige_simulate.do}
+# vsim -voptargs=""+acc"" -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_gige xil_defaultlib.glbl 
+# Start time: 10:20:53 on Feb 12,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_gige(fast)
+# Loading work.top_gige(fast)
+# Loading work.timer(fast)
+# Loading work.gen_frame_ctrl(fast)
+# Loading work.checksum_ctrl(fast)
+# Loading work.blk_wr8x4096(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../gige_tx_frame.srcs/sources_1/new/checksum_ctrl.v(130): [PCDPC] - Port size (12) does not match connection size (14) for port 'addra'. The port definition is at: ../../../../gige_tx_frame.srcs/sources_1/ip/blk_wr8x4096/sim/blk_wr8x4096.v(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gige/inst_top_gige/inst_checksum_ctrl/inst_blk_wr8x4096 File: ../../../../gige_tx_frame.srcs/sources_1/ip/blk_wr8x4096/sim/blk_wr8x4096.v
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator module tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave -position insertpoint sim:/tb_gige/inst_top_gige/*
+add wave -position insertpoint sim:/tb_gige/inst_top_gige/inst_checksum_ctrl/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_gige(fast)
+# Loading work.top_gige(fast)
+# Loading work.timer(fast)
+# Loading work.gen_frame_ctrl(fast)
+# Loading work.checksum_ctrl(fast)
+# Loading work.blk_wr8x4096(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../gige_tx_frame.srcs/sources_1/new/checksum_ctrl.v(130): [PCDPC] - Port size (12) does not match connection size (14) for port 'addra'. The port definition is at: ../../../../gige_tx_frame.srcs/sources_1/ip/blk_wr8x4096/sim/blk_wr8x4096.v(59).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_gige/inst_top_gige/inst_checksum_ctrl/inst_blk_wr8x4096 File: ../../../../gige_tx_frame.srcs/sources_1/ip/blk_wr8x4096/sim/blk_wr8x4096.v
+run
+# Block Memory Generator module tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# blk_mem_gen_v8_4_1 collision detected at time: 16508000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 collision detected at time: 32892000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 collision detected at time: 49276000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 collision detected at time: 65660000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 collision detected at time: 82044000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# blk_mem_gen_v8_4_1 collision detected at time: 98428000, Instance: tb_gige.inst_top_gige.inst_checksum_ctrl.inst_blk_wr8x4096.inst.native_mem_module.blk_mem_gen_v8_4_1_inst.async_coll, A write address: 0, B  read address: 0
+# End time: 10:27:36 on Feb 12,2020, Elapsed time: 0:06:43
+# Errors: 0, Warnings: 0

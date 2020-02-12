@@ -1,0 +1,54 @@
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_top_gige_simulate.do}
+# vsim -voptargs=""+acc"" -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top_gige xil_defaultlib.glbl 
+# Start time: 21:08:37 on Feb 11,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_top_gige(fast)
+# Loading work.top_gige(fast)
+# Loading work.timer(fast)
+# Loading work.gen_frame_ctrl(fast)
+# Loading work.add_check_sum(fast)
+# Loading work.bram_wr8x256(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator module tb_top_gige.inst_top_gige.inst_add_check_sum.inst_bram_wr8x256.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave -position insertpoint sim:/tb_top_gige/inst_top_gige/*
+add wave -position insertpoint sim:/tb_top_gige/inst_top_gige/inst_add_check_sum/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_top_gige(fast)
+# Loading work.top_gige(fast)
+# Loading work.timer(fast)
+# Loading work.gen_frame_ctrl(fast)
+# Loading work.add_check_sum(fast)
+# Loading work.bram_wr8x256(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+run
+# Block Memory Generator module tb_top_gige.inst_top_gige.inst_add_check_sum.inst_bram_wr8x256.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run
+# End time: 21:47:16 on Feb 11,2020, Elapsed time: 0:38:39
+# Errors: 0, Warnings: 0
