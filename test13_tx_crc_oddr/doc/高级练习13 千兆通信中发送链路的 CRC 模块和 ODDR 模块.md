@@ -155,3 +155,45 @@
 ​	可以设置只捕获udp，其他的则会标黑。
 
 ​	基本的使用就这样啦，应该会使用这个软件啦。
+
+### 3.ODDR原语部分信号的理解
+
+​	主要是tx_clk和tx_en两路信号为什么要经过ODDR模块理解的不是很透彻，经过老师的说明后，有了比较清楚的认识，下面分别进行说明。
+
+```verilog
+	ODDR #(
+      .DDR_CLK_EDGE("SAME_EDGE"), // "OPPOSITE_EDGE" or "SAME_EDGE" 
+      .INIT(1'b0),    // Initial value of Q: 1'b0 or 1'b1
+      .SRTYPE("SYNC") // Set/Reset type: "SYNC" or "ASYNC" 
+   ) ODDR_inst_clk (
+       .Q(tx_clk),   // 1-bit DDR output
+       .C(tx_c),   // 1-bit clock input
+       .CE(1'b1), // 1-bit clock enable input
+       .D1(1'b1), // 1-bit data input (positive edge)
+       .D2(1'b0), // 1-bit data input (negative edge)
+       .R(rst),   // 1-bit reset
+       .S(1'b0)    // 1-bit set
+		);
+
+	ODDR #(
+      .DDR_CLK_EDGE("SAME_EDGE"), // "OPPOSITE_EDGE" or "SAME_EDGE" 
+      .INIT(1'b0),    // Initial value of Q: 1'b0 or 1'b1
+      .SRTYPE("SYNC") // Set/Reset type: "SYNC" or "ASYNC" 
+   ) ODDR_inst_ctrl (
+       .Q(tx_ctrl),   // 1-bit DDR output
+       .C(tx_c),   // 1-bit clock input
+       .CE(1'b1), // 1-bit clock enable input
+       .D1(tx_en), // 1-bit data input (positive edge)
+       .D2(tx_en), // 1-bit data input (negative edge)
+       .R(rst),   // 1-bit reset
+       .S(1'b0)    // 1-bit set
+		);
+```
+
+#### （1）tx_en上升沿和下降沿都作为输入，两者起到不同的作用
+
+​	要把tx_en传递出去，其中上升沿的tx_en输入表示数据有效，下降沿的tx_en则表示数据没有错误，因为这里通过高电平是表示没有错误的，故在tx_en有效的范围内，在下降沿输入tx_en拉高完全是可行的
+
+#### （2）tx_clk经过ODDR模块
+
+​	是为了数据同步，而不是为了相移，相移只能是PLL之类的IP模块进行实现。
